@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "8b7a324b54d8031e4257114a0ea522d00cc26264"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/zO2AAKf6/versions/2AEauQKy/spookypaintingsleonnf-1.0.0%20Fabric%2026.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8912880
-project-id = 1001389
+[update.modrinth]
+mod-id = "zO2AAKf6"
+version = "2AEauQKy"

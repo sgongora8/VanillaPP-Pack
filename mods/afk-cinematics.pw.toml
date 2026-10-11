@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "da091091d33f09b0dafac3e225aaee85df53df1b"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/MjVuY1gY/versions/q7nT1JY4/afk-cinematics-1.0.6%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8979150
-project-id = 1494449
+[update.modrinth]
+mod-id = "MjVuY1gY"
+version = "q7nT1JY4"

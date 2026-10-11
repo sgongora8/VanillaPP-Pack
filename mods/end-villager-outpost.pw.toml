@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "3051f0ceb174689afae863c6c677ed1fdb3d315b"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/J90dLs0h/versions/5GyPIdXt/end_villager_outpost-1.0.0%20Fabric%2026.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8912256
-project-id = 1341317
+[update.modrinth]
+mod-id = "J90dLs0h"
+version = "5GyPIdXt"

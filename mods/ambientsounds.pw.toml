@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "2b2e14a4aad85da51bf11a3bd84bdff06a14260e"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/fM515JnW/versions/ViiM66Of/AmbientSounds_FABRIC_v6.3.6_mc26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8894331
-project-id = 254284
+[update.modrinth]
+mod-id = "fM515JnW"
+version = "ViiM66Of"

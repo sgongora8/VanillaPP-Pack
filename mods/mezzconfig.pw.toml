@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "fa77bd907a4b2734529e489b5bd44558678a414b"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/7tEfOcA7/versions/k9NIYAoR/mezz_config-26.3-fabric-0.6.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8932697
-project-id = 1689768
+[update.modrinth]
+mod-id = "7tEfOcA7"
+version = "k9NIYAoR"

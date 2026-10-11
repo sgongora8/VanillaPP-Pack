@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "b1a52e045209c12f2372fd10a805ea0fb099a718"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/MBAkmtvl/versions/fPwhz0pb/balm-fabric-26.3-26.3.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8889669
-project-id = 531761
+[update.modrinth]
+mod-id = "MBAkmtvl"
+version = "fPwhz0pb"

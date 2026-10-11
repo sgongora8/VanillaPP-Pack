@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "2fdb969c89094aae475c7717ff08bb50a61b27ad"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/MDljZreW/versions/bXmtRkSU/reachbehind-v26.3.0-mc26.3.x%2Bfabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 8954050
-project-id = 1572990
+[update.modrinth]
+mod-id = "MDljZreW"
+version = "bXmtRkSU"

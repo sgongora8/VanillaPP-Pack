@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "91e91c955650afaf98e4acebee060a58ac99ade5"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/gvQqBUqZ/versions/WXHRsMRl/lithium-fabric-0.26.1%2Bmc26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8895969
-project-id = 360438
+[update.modrinth]
+mod-id = "gvQqBUqZ"
+version = "WXHRsMRl"

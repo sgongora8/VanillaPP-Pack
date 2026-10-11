@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "b18202703051275d9d4f7f7ddab18e54a21d14f5"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/yn9u3ypm/versions/r9hY06vQ/graves-3.13.0%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8853635
-project-id = 497175
+[update.modrinth]
+mod-id = "yn9u3ypm"
+version = "r9hY06vQ"

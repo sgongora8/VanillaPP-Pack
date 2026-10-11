@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "07090b066d95794bc992c8ec75f2343aa1349c4a"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/XjDZ0DwA/versions/KNtnEzPa/unbreakables-fabric-26.3-26.3.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8893558
-project-id = 1190485
+[update.modrinth]
+mod-id = "XjDZ0DwA"
+version = "KNtnEzPa"

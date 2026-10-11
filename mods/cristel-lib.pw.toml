@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "9cc655e54a8e613ccacdd0e372e360067986174d"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/cl223EMc/versions/rWxmPrGC/cristellib-fabric-26.3-3.1.13.jar"
 
 [update]
-[update.curseforge]
-file-id = 8921504
-project-id = 856996
+[update.modrinth]
+mod-id = "cl223EMc"
+version = "rWxmPrGC"

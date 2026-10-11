@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "8bd5b61369e74457d56c0680b2ddfa27f88424a2"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/pfNveXQV/versions/GUPQ5QJ9/huskspawn-26.3.0-3.6.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926384
-project-id = 348176
+[update.modrinth]
+mod-id = "pfNveXQV"
+version = "GUPQ5QJ9"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "031a69a494f52efba3b1898200e3e7a5a655d8f7"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Kp2uclYl/versions/EKRtUCSM/inventoryhud.fabric.26.3-3.4.36.jar"
 
 [update]
-[update.curseforge]
-file-id = 8934760
-project-id = 357540
+[update.modrinth]
+mod-id = "Kp2uclYl"
+version = "EKRtUCSM"

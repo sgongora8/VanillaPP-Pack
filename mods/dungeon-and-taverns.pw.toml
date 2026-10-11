@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "a4ef2f6b86970731ce7efdf61466b5cc31f43599"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/tpehi7ww/versions/A6LcZGsV/dungeons-and-taverns-6.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926210
-project-id = 853794
+[update.modrinth]
+mod-id = "tpehi7ww"
+version = "A6LcZGsV"

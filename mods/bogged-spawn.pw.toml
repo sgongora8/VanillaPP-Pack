@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "68a91209af8d083e8c6a8fee345238b169cf1f5a"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/1TyQZUcH/versions/QROMv1W7/boggedspawn-26.3.0-1.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926964
-project-id = 1036810
+[update.modrinth]
+mod-id = "1TyQZUcH"
+version = "QROMv1W7"

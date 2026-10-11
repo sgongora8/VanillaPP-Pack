@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "ec5fdf4798e29e483fa861dead101b0d9d6d72cb"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/4WWQxlQP/versions/LCG1Bm84/servercore-fabric-1.5.20%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8893825
-project-id = 550579
+[update.modrinth]
+mod-id = "4WWQxlQP"
+version = "LCG1Bm84"

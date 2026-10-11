@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "6259b275cda55f802cdb898729e88fd33f437310"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/qyVF9oeo/versions/9loJgQlO/sound-physics-remastered-fabric-1.5.1%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8909383
-project-id = 535489
+[update.modrinth]
+mod-id = "qyVF9oeo"
+version = "9loJgQlO"

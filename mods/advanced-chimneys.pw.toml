@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "11489b24a99c29d1c7be2c807d2a0211a0a7dc6c"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/r2rWUhnP/versions/DsuBuHcT/adchimneys-26.3.0.0-fabric-build.0062.jar"
 
 [update]
-[update.curseforge]
-file-id = 8921717
-project-id = 244830
+[update.modrinth]
+mod-id = "r2rWUhnP"
+version = "DsuBuHcT"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "90defc1493e3202c0879e65cbaf2d4fd9246dd65"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/XaDC71GB/versions/i7bG1F7n/lithostitched-2.0.1-fabric-26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8908588
-project-id = 936015
+[update.modrinth]
+mod-id = "XaDC71GB"
+version = "i7bG1F7n"

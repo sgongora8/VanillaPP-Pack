@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "fc1f2f374c5c82117599071ed18b6ef9bba2c7fb"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/fALzjamp/versions/4Eotm6ov/Chunky-Fabric-1.5.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8036332
-project-id = 433175
+[update.modrinth]
+mod-id = "fALzjamp"
+version = "4Eotm6ov"

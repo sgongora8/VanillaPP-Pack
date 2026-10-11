@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "b0a4d8a2bb0b4908c3c3f9a9483c8bd11ed55309"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/rYocd2LE/versions/hNKbQ85c/dungeons-and-taverns-stronghold-overhaul-3.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926271
-project-id = 920416
+[update.modrinth]
+mod-id = "rYocd2LE"
+version = "hNKbQ85c"

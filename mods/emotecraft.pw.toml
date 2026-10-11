@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "851df895e075b70c5369ce9500e30378e8d72214"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/pZ2wrerK/versions/tkC33xHd/emotecraft-for-MC26.3-3.5.0-a.build.167.jar"
 
 [update]
-[update.curseforge]
-file-id = 8898543
-project-id = 397809
+[update.modrinth]
+mod-id = "pZ2wrerK"
+version = "tkC33xHd"

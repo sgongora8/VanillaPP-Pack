@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "80612b838057d9bc4743503516bf7378f4eb215f"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/CFX9ftUJ/versions/Qxv1ndf9/advancednetherite-fabric-2.4.3-26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8938345
-project-id = 547881
+[update.modrinth]
+mod-id = "CFX9ftUJ"
+version = "Qxv1ndf9"

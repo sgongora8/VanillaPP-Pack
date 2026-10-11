@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "38047a94608bb7aaf6200cb093a61a332f7cb9d2"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/bhnA6sV8/versions/VYmEo1o8/ingeniumapi-1.0.2-FABRIC-MC-26.X.jar"
 
 [update]
-[update.curseforge]
-file-id = 8956937
-project-id = 1609990
+[update.modrinth]
+mod-id = "bhnA6sV8"
+version = "VYmEo1o8"

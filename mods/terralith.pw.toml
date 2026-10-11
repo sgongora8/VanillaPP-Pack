@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "725bd469bc72d6e366ecbf4818e0438524ca5741"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/8oi3bsk5/versions/aGE3hYAA/Terralith_26.3_v2.6.5%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8994208
-project-id = 513688
+[update.modrinth]
+mod-id = "8oi3bsk5"
+version = "aGE3hYAA"

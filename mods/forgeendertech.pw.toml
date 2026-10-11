@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "449d8b9d92906bbceaac4c5166a4a21761055ff9"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/EgS8gGp8/versions/lHcepIFm/forgeendertech-26.3.0.0-fabric-build.0062.jar"
 
 [update]
-[update.curseforge]
-file-id = 8921676
-project-id = 244844
+[update.modrinth]
+mod-id = "EgS8gGp8"
+version = "lHcepIFm"

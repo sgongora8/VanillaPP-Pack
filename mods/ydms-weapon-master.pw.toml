@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "6e393e646f40e426851255f1673a26d64d4bf53e"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/qi1sj2da/versions/M0qt6sse/weaponmaster_ydm-4.4.4-fabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 8905060
-project-id = 608235
+[update.modrinth]
+mod-id = "qi1sj2da"
+version = "M0qt6sse"

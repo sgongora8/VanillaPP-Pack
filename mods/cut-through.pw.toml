@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "2e719fb824fd09711218080f2ad432f4a22275ef"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Dk6su9JN/versions/PCWjwufI/cutthrough-v26.3.0-mc26.3.x%2Bfabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 8953992
-project-id = 969423
+[update.modrinth]
+mod-id = "Dk6su9JN"
+version = "PCWjwufI"

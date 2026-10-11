@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "11232ce547d853a8ea993f70c6f0f47d73e79dfd"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/LN9BxssP/versions/XokTN39e/supermartijn642configlib-1.1.8-fabric-mc26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8887941
-project-id = 438332
+[update.modrinth]
+mod-id = "LN9BxssP"
+version = "XokTN39e"

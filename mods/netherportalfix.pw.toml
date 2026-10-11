@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "931aa21198cdff436adecc90cbf73de8f16b0d67"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/nPZr02ET/versions/RC1fmH8z/netherportalfix-fabric-26.3-26.3.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8893517
-project-id = 241160
+[update.modrinth]
+mod-id = "nPZr02ET"
+version = "RC1fmH8z"

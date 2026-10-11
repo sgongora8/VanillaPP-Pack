@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "49a115412c79cc7d6cb56710aa9754910ee9eda7"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/fxCEHNcr/versions/E55ztMmN/breezespawn-26.3.0-1.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926918
-project-id = 1036823
+[update.modrinth]
+mod-id = "fxCEHNcr"
+version = "E55ztMmN"

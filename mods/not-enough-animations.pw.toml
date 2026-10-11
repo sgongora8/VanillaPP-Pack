@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "6554509fc89187c5b6d63f586edfc35b8e41158c"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/MPCX6s5C/versions/EhSk2OTD/notenoughanimations-fabric-1.12.6-mc26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8929069
-project-id = 433760
+[update.modrinth]
+mod-id = "MPCX6s5C"
+version = "EhSk2OTD"

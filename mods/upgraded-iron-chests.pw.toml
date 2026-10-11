@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "6844283f43e87b5395447568da95fdcf3b422b56"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/gie37Jxu/versions/LbC7gT0a/upgraded-iron-chests-1.5.jar"
 
 [update]
-[update.curseforge]
-file-id = 8976784
-project-id = 1535273
+[update.modrinth]
+mod-id = "gie37Jxu"
+version = "LbC7gT0a"

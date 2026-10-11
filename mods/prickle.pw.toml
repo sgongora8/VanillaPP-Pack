@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "30321451a787179cd9df0c01373cc5cb8c4fe2e1"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/aaRl8GiW/versions/aPdekuq6/PrickleMC-fabric-MC26.3-26.3.0.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 8960729
-project-id = 1023259
+[update.modrinth]
+mod-id = "aaRl8GiW"
+version = "aPdekuq6"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "65c0f5588900e7ade476164ec4915bfab52c129a"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/aC3cM3Vq/versions/LeMuMhLv/MouseTweaks-fabric-mc26.3-2.31.jar"
 
 [update]
-[update.curseforge]
-file-id = 8887995
-project-id = 60089
+[update.modrinth]
+mod-id = "aC3cM3Vq"
+version = "LeMuMhLv"

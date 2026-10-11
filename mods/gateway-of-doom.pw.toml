@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "7903eba804452bc34d4659ffafc350e7756514da"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Z7xAH01M/versions/tP8JV4CH/gatewayofdoom-fabric-26.3-2.2.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8893540
-project-id = 1499145
+[update.modrinth]
+mod-id = "Z7xAH01M"
+version = "tP8JV4CH"

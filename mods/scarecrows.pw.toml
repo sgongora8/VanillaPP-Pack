@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "4354c53b8920ba9ee9011cc4e27ff3aafba9622f"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/qsyWSAhB/versions/JpCA8Ou5/scarecrows-fabric-26.3-1.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 8921629
-project-id = 304644
+[update.modrinth]
+mod-id = "qsyWSAhB"
+version = "JpCA8Ou5"

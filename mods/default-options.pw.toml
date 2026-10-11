@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "b2a8ceea8bbf13b9e2531ba08bc8fc8028eae675"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/WEg59z5b/versions/YluujUg3/defaultoptions-fabric-26.3-26.3.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8893535
-project-id = 232131
+[update.modrinth]
+mod-id = "WEg59z5b"
+version = "YluujUg3"

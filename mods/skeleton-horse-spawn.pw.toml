@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "738b01dfcd4bb55f65227405e495dd79a5e1096a"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/ZcqNoW8j/versions/KeGYsftb/skeletonhorsespawn-26.3.0-4.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8925340
-project-id = 346219
+[update.modrinth]
+mod-id = "ZcqNoW8j"
+version = "KeGYsftb"

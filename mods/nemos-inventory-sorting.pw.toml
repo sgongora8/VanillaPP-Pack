@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "bbd3480357d3f152cfd99e9a60f49c0f7e72e989"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/JHgf35QL/versions/NE4aTBtE/nemos-inventory-sorting-Fabric-26.3-1.22.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8948978
-project-id = 1148320
+[update.modrinth]
+mod-id = "JHgf35QL"
+version = "NE4aTBtE"

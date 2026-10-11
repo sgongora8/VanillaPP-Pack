@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "c6bf0ce0d3c0d0cda01864754b9aa5571b8278b1"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/QQXAdCzh/versions/3o7Yk0qP/Ping-Wheel-1.12.2-fabric-26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8931641
-project-id = 734339
+[update.modrinth]
+mod-id = "QQXAdCzh"
+version = "3o7Yk0qP"

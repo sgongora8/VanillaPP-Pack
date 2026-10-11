@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "2d291ab0649a2922df8dd1ddffdb99865606798f"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/2lg2mCPe/versions/FAl30AqC/strayspawn-26.3.0-3.7.jar"
 
 [update]
-[update.curseforge]
-file-id = 8924590
-project-id = 348172
+[update.modrinth]
+mod-id = "2lg2mCPe"
+version = "FAl30AqC"

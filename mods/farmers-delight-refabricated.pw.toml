@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "8c00b5f004fafe157df7ddb241d32f28f458a4d6"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/7vxePowz/versions/hTNvMewX/FarmersDelight-26.3-3.6.27%2Brefabricated.jar"
 
 [update]
-[update.curseforge]
-file-id = 8921003
-project-id = 993166
+[update.modrinth]
+mod-id = "7vxePowz"
+version = "hTNvMewX"

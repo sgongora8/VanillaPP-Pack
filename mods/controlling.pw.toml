@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "232a2b50b30b9922be9074a82e74f7424d885e33"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/xv94TkTM/versions/4QeVlQxd/Controlling-fabric-26.3-26.3.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8925557
-project-id = 250398
+[update.modrinth]
+mod-id = "xv94TkTM"
+version = "4QeVlQxd"

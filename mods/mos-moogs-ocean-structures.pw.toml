@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "e272a06fee7e4b0a4c2efe8c1d338f7e250a0bd9"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/ZKBkklMv/versions/QfMITqh9/MoogsOceanStructures-universal-1.21-1.1.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8902208
-project-id = 1628830
+[update.modrinth]
+mod-id = "ZKBkklMv"
+version = "QfMITqh9"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "e3f7d7ca69809785121fb573e572ef89ebaa6154"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/TjSm1wrD/versions/iKbywnU7/modernfix-5.27.20-build.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8896909
-project-id = 1367508
+[update.modrinth]
+mod-id = "TjSm1wrD"
+version = "iKbywnU7"

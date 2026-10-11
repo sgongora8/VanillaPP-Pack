@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "1af24d214ab7a019cfed34c826df4165d8b41007"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/rlloIFEV/versions/5rC23dXQ/travelersbackpack-fabric-26.3-11.4.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 8965178
-project-id = 541171
+[update.modrinth]
+mod-id = "rlloIFEV"
+version = "5rC23dXQ"

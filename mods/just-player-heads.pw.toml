@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "7f2df63173b55e53a65503766d79878e3bca5a31"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/YdVBZMNR/versions/AeYl0GQS/justplayerheads-26.3.0-4.4.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926324
-project-id = 303441
+[update.modrinth]
+mod-id = "YdVBZMNR"
+version = "AeYl0GQS"

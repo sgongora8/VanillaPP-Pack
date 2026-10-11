@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "121b77635ea1b26f33cdb0aab6df3e143da81e21"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/8aoMKplv/versions/odZqQagt/punchy-2.8b-fabric-26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8976101
-project-id = 1374153
+[update.modrinth]
+mod-id = "8aoMKplv"
+version = "odZqQagt"

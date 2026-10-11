@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "fae060655d59d70f0f8c8afe6e04a3e24667fc66"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/9IUlkb2K/versions/Aq9QCxpG/cavespiderspawn-26.3.0-1.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926910
-project-id = 952294
+[update.modrinth]
+mod-id = "9IUlkb2K"
+version = "Aq9QCxpG"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "287f670348124261bef5c7833715c49960e74dee"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/1bokaNcj/versions/B2aG1aya/xaerominimap-fabric-26.3-26.6.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 9067206
-project-id = 263420
+[update.modrinth]
+mod-id = "1bokaNcj"
+version = "B2aG1aya"

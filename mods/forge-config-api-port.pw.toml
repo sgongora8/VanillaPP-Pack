@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "a0d802d2cb010a5054c72f1ccf248433b6e0bafb"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/ohNO6lps/versions/JpKvrr9J/ForgeConfigAPIPort-v26.3.1-mc26.3.x-Fabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 8938808
-project-id = 547434
+[update.modrinth]
+mod-id = "ohNO6lps"
+version = "JpKvrr9J"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "61412064baed880464ad30ef54cba93be8dccd67"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/J81TRJWm/versions/pQLA2B54/konkrete_fabric_1.11.1_MC_26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8911219
-project-id = 410295
+[update.modrinth]
+mod-id = "J81TRJWm"
+version = "pQLA2B54"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "ef5f57f0e5d06a2f8bec5c073e01ddb061ad477a"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/r4PuRGfV/versions/S7bUhX4n/MoogsEndStructures-universal-1.21-2.1.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8902211
-project-id = 892382
+[update.modrinth]
+mod-id = "r4PuRGfV"
+version = "S7bUhX4n"

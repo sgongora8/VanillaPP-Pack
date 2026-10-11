@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "696b1dad5d45a4ad3522c426e04054bf21fc668a"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/G1hIVOrD/versions/cNHatNw3/ResourcefulLib-6.0.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 8925951
-project-id = 570073
+[update.modrinth]
+mod-id = "G1hIVOrD"
+version = "cNHatNw3"

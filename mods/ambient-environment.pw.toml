@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "b82478332bb1898d8d83d0d77bc60f08e3f2f396"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/DyTvM1dv/versions/8nLEdSG0/AmbientEnvironment-fabric-26.3-26.3.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 8900484
-project-id = 320163
+[update.modrinth]
+mod-id = "DyTvM1dv"
+version = "8nLEdSG0"

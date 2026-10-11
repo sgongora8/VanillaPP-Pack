@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "0170cd830c5b213fbaaae0d637a16ef06683a99c"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/rf0JE0fv/versions/gT8wQXfI/ocean_lily_pad_village-1.0.0%20Fabric%2026.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8977195
-project-id = 1394882
+[update.modrinth]
+mod-id = "rf0JE0fv"
+version = "gT8wQXfI"

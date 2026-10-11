@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "f565bbeb201f2305e81761429d3f1f47e1c3a321"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/5ZwdcRci/versions/3MP9UR23/ImmediatelyFast-Fabric-1.17.1%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8905047
-project-id = 686911
+[update.modrinth]
+mod-id = "5ZwdcRci"
+version = "3MP9UR23"

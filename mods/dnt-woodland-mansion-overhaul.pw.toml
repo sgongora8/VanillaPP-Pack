@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "fff33c05fb10a820bcac2abdc9169a950c6b601f"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/3GfxWFCy/versions/EPLwoEkn/dungeons-and-taverns-woodland-mansion-overhaul-2.2.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926260
-project-id = 1053222
+[update.modrinth]
+mod-id = "3GfxWFCy"
+version = "EPLwoEkn"

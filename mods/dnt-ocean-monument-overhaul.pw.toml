@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "07680af3f03201f35bc253f9694a64ee403ce66f"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/z6GJ3ycD/versions/k9Bj5hfz/dungeons-and-taverns-ocean-monument-overhaul-2.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8903490
-project-id = 1053227
+[update.modrinth]
+mod-id = "z6GJ3ycD"
+version = "k9Bj5hfz"

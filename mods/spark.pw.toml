@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "0940b4089affdfca37d6b6d0ea5ecae4dbd8fe98"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/l6YH9Als/versions/e3hsPc1o/spark-1.10.187-fabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 8918571
-project-id = 361579
+[update.modrinth]
+mod-id = "l6YH9Als"
+version = "e3hsPc1o"

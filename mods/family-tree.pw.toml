@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "5deb79d7429714c52c73256e92574b813e5df708"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/CVQKDAe7/versions/e3OxEhY2/familytree-1.1.0%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 9015269
-project-id = 1718788
+[update.modrinth]
+mod-id = "CVQKDAe7"
+version = "e3OxEhY2"

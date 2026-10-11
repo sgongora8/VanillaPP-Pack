@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "8d28cb97ea6d0ba7cd25f131b48c469493be94cb"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/QAGBst4M/versions/q45ZgjNo/puzzleslib-v26.3.11-mc26.3.x%2Bfabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 9078918
-project-id = 495476
+[update.modrinth]
+mod-id = "QAGBst4M"
+version = "q45ZgjNo"

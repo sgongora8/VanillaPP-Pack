@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "91b1a4883406e4ffc113cb9d4e188e8db8ad606f"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/DjLobEOy/versions/yajFnGZS/t_and_t-fabric-neoforge-1.13.12.jar"
 
 [update]
-[update.curseforge]
-file-id = 8895612
-project-id = 626761
+[update.modrinth]
+mod-id = "DjLobEOy"
+version = "yajFnGZS"

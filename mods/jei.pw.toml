@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "25c26fa7df31b145fc298f2d26c8c6bc51aab46b"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/u6dRKJwZ/versions/6X53MOJu/jei-26.3-fabric-31.7.0.45.jar"
 
 [update]
-[update.curseforge]
-file-id = 8990340
-project-id = 238222
+[update.modrinth]
+mod-id = "u6dRKJwZ"
+version = "6X53MOJu"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "4cc25ce6217326ff14169f5358921773297e9475"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/g96Z4WVZ/versions/Sp0ctspw/BadOptimizations-2.4.1-26.3-fabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 8891658
-project-id = 949555
+[update.modrinth]
+mod-id = "g96Z4WVZ"
+version = "Sp0ctspw"

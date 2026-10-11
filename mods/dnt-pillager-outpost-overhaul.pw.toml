@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "dd6366cb2907bed2d59b911c40f7912c53b02b8e"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/QIt10I7z/versions/nCmbkuPY/dungeons-and-taverns-pillager-outpost-overhaul-3.4.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926286
-project-id = 920423
+[update.modrinth]
+mod-id = "QIt10I7z"
+version = "nCmbkuPY"

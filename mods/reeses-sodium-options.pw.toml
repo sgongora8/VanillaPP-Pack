@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "19cc0e4fb99a65daeca20214d3e140f23eddd8ac"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Bh37bMuy/versions/ewg6u30j/reeses-sodium-options-fabric-2.2.4%2Bmc26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8891934
-project-id = 511319
+[update.modrinth]
+mod-id = "Bh37bMuy"
+version = "ewg6u30j"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "3d19e40c5f97186857db98e622c01c2cd0030497"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/EsAfCjCV/versions/PHjDtQay/appleskin-fabric-mc26.3-3.0.10.jar"
 
 [update]
-[update.curseforge]
-file-id = 8907912
-project-id = 248787
+[update.modrinth]
+mod-id = "EsAfCjCV"
+version = "PHjDtQay"

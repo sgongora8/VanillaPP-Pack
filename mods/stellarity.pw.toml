@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "1e50711590bc91b74d844dbb3087ba640aae1d43"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/bZgeDzN8/versions/ocbGGokV/Stellarity-6.0.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 8951534
-project-id = 883166
+[update.modrinth]
+mod-id = "bZgeDzN8"
+version = "ocbGGokV"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "8563a9c958a1534cb935ee2eb220170c6b9f0219"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/lOOpEntO/versions/zJLURVLx/AttributeFix-fabric-MC26.3-26.3.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8969089
-project-id = 280510
+[update.modrinth]
+mod-id = "lOOpEntO"
+version = "zJLURVLx"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "0b20fe66668b29c9b5e04e51bfda70407babf0fd"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/7JTDDmRT/versions/Pz42qz4P/dungeons-and-taverns-desert-temple-overhaul-2.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 8903606
-project-id = 1053225
+[update.modrinth]
+mod-id = "7JTDDmRT"
+version = "Pz42qz4P"

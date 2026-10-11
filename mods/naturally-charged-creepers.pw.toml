@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "9ef6b706d9ab4678bb70cfe67c6f3669cf6c71f9"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/j5LquiGA/versions/tIBmAbkU/naturallychargedcreepers-26.3.0-3.6.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926184
-project-id = 324586
+[update.modrinth]
+mod-id = "j5LquiGA"
+version = "tIBmAbkU"

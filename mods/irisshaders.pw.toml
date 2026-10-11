@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "fa03640ba1e4ef2f7ae3619c6373a06e46d0ba2c"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/YL57xq9U/versions/vTN4NRGW/iris-fabric-1.11.7%2Bmc26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 9015108
-project-id = 455508
+[update.modrinth]
+mod-id = "YL57xq9U"
+version = "vTN4NRGW"

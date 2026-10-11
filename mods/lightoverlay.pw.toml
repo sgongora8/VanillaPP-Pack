@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "d4c232fb32c912bcc508f84c99599ce508a4e5a6"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/8qVa1XCN/versions/AmDFFQBg/light-overlay-2.13.0%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 9041647
-project-id = 1376481
+[update.modrinth]
+mod-id = "8qVa1XCN"
+version = "AmDFFQBg"

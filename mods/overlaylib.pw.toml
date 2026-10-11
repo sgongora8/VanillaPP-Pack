@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "fcfc27e65d315e75e6cc03793b51e5e5f68d119a"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/M1B8mLoH/versions/iSTcauwL/overlaylib-0.12.1%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 9041511
-project-id = 1447526
+[update.modrinth]
+mod-id = "M1B8mLoH"
+version = "iSTcauwL"

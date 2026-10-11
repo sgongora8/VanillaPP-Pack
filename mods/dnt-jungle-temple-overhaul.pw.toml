@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "9c14c5dc931b0b6aef5f96dc0a16ff248d860dcd"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/oHjYCS0f/versions/pF9bn2gi/dungeons-and-taverns-jungle-temple-overhaul-2.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 8903592
-project-id = 1053226
+[update.modrinth]
+mod-id = "oHjYCS0f"
+version = "pF9bn2gi"

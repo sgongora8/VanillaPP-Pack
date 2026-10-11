@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "52309c6c4d079c493a26e966a23defe74071efe5"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/e0M1UDsY/versions/nygfvi1O/collective-26.3.0-8.40.jar"
 
 [update]
-[update.curseforge]
-file-id = 8940159
-project-id = 342584
+[update.modrinth]
+mod-id = "e0M1UDsY"
+version = "nygfvi1O"

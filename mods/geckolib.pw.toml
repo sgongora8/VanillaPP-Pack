@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "064ad66ea62bcf3fd0e89a719843b1a06c81925c"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/8BmcQJ2H/versions/kSxHvs99/geckolib-fabric-26.3-5.5.7.jar"
 
 [update]
-[update.curseforge]
-file-id = 8945630
-project-id = 388172
+[update.modrinth]
+mod-id = "8BmcQJ2H"
+version = "kSxHvs99"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "2653bb482edaaa1b0cfcf2b43783921677bb146f"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/DNuNq5bb/versions/HYt24jpu/dungeons-and-taverns-ancient-city-overhaul-3.5.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926249
-project-id = 920418
+[update.modrinth]
+mod-id = "DNuNq5bb"
+version = "HYt24jpu"

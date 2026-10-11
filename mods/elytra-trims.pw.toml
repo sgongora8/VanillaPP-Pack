@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "76553c51e0a4268e482d0a97711891f4e2a5bc36"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/XpzGz7KD/versions/KiDLWRiF/elytratrims-fabric-4.9.1%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8989092
-project-id = 876199
+[update.modrinth]
+mod-id = "XpzGz7KD"
+version = "KiDLWRiF"

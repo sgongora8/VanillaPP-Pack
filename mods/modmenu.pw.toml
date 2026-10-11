@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "e75cdab1860f1efd2ac29876512f6d7da9edefdb"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/mOgUt4GM/versions/lcxkZSq6/modmenu-21.0.0-beta.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8854511
-project-id = 308702
+[update.modrinth]
+mod-id = "mOgUt4GM"
+version = "lcxkZSq6"

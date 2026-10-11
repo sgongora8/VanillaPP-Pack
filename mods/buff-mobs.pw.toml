@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "541c8d03706166d32d9493febdca2ceeda7c3946"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/4GYCwwms/versions/LzVRRV8h/buffmobs-3.3.3%2Bmc26.1-fabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 8934082
-project-id = 1325553
+[update.modrinth]
+mod-id = "4GYCwwms"
+version = "LzVRRV8h"

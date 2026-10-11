@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "980234046f202dc3890c499f1c7378714c3ff511"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Cnejf5xM/versions/MTui9kST/rightclickharvest-fabric-4.6.2%2B26.3.x.jar"
 
 [update]
-[update.curseforge]
-file-id = 8914313
-project-id = 452834
+[update.modrinth]
+mod-id = "Cnejf5xM"
+version = "MTui9kST"

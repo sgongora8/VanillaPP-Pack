@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "2280c8ca8d77b4dcd5617daab3428b8115bef8d6"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/2M01OLQq/versions/Cj9VEeGt/shulkerboxtooltip-fabric-5.4.2%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8897805
-project-id = 315811
+[update.modrinth]
+mod-id = "2M01OLQq"
+version = "Cj9VEeGt"

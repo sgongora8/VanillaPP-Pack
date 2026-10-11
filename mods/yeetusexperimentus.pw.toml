@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "bfff7bf8052ecb4ce49fa8d20505b8ff479b9caf"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/HaaH232J/versions/aSzA9PLW/yeetusexperimentus-fabric-26.3.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8919819
-project-id = 635427
+[update.modrinth]
+mod-id = "HaaH232J"
+version = "aSzA9PLW"

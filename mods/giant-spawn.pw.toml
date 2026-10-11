@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "953bd8c277e202b60f359856eb6bcd38032fb9bf"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/iWwn7s9U/versions/OIUro8zC/giantspawn-26.3.0-5.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926554
-project-id = 347921
+[update.modrinth]
+mod-id = "iWwn7s9U"
+version = "OIUro8zC"

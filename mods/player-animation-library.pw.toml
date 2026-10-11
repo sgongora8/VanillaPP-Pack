@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "1ad625ed4bb412698017134124c6c22825032b59"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/ha1mEyJS/versions/kemJXVHZ/PlayerAnimationLibMerged-1.2.7%2Bmc.26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8898481
-project-id = 1283899
+[update.modrinth]
+mod-id = "ha1mEyJS"
+version = "kemJXVHZ"

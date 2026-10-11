@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "e788a22a46fa3cf40078e1b794a37c0684da76ac"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/JuksLGBQ/versions/wcSV1VD1/optigui-2.3.0-beta.10%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8912084
-project-id = 619986
+[update.modrinth]
+mod-id = "JuksLGBQ"
+version = "wcSV1VD1"

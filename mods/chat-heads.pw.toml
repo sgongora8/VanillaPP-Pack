@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "60d0415cbb9932789ff9ed03d3fcdee250a72d7c"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/R2zOq4xG/chat_heads-1.2.9-fabric-26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8893778
-project-id = 407206
+[update.modrinth]
+mod-id = "Wb5oqrBJ"
+version = "R2zOq4xG"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "f57af3bcbcea848c1c1845d3d45feae069e7b934"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/DT56YDir/versions/GxYG6sJy/universalenchants-v26.3.0-mc26.3.x%2Bfabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 8953894
-project-id = 593958
+[update.modrinth]
+mod-id = "DT56YDir"
+version = "GxYG6sJy"

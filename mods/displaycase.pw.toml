@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "58b650f07844d4e8363a801880cca470b5de57f8"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/cSIsh4gX/versions/hQZuEwCW/display_case-fabric-26.3-1.4.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8932164
-project-id = 517791
+[update.modrinth]
+mod-id = "cSIsh4gX"
+version = "hQZuEwCW"

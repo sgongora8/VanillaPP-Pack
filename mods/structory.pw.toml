@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "da82d733b6f44e1b3ca1187f6d89cd0e69f562c8"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/aKCwCJlY/versions/GjOkOVW4/Structory_26.3_v1.3.18%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8968053
-project-id = 636540
+[update.modrinth]
+mod-id = "aKCwCJlY"
+version = "GjOkOVW4"

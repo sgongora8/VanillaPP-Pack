@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "d09078e6793530a52e1ef9984c6f23174fa95385"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/fPetb5Kh/versions/pHan4UQ9/NaturesCompass-26.3-2.5.1-fabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 8916820
-project-id = 252848
+[update.modrinth]
+mod-id = "fPetb5Kh"
+version = "pHan4UQ9"

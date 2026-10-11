@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "2025b35fa829791643f5cfaaa0767c6b58ee75e4"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/vjGZJDu5/versions/6Bb1tpQK/amber-fabric-11.5.0%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 9022586
-project-id = 1139910
+[update.modrinth]
+mod-id = "vjGZJDu5"
+version = "6Bb1tpQK"

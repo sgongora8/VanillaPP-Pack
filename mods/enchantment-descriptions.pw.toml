@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "afb250988972788239e07f90d379712506d918fd"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/UVtY3ZAC/versions/aoV4XKPL/EnchantmentDescriptions-fabric-MC26.3-26.3.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8968610
-project-id = 250419
+[update.modrinth]
+mod-id = "UVtY3ZAC"
+version = "aoV4XKPL"

@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "445f762f9f302cad7ba1db85e12962e81d7ea7c2"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/gF3BGWvG/versions/r4qdHbjN/open-parties-and-claims-fabric-26.3-0.32.8.jar"
 
 [update]
-[update.curseforge]
-file-id = 9066788
-project-id = 636608
+[update.modrinth]
+mod-id = "gF3BGWvG"
+version = "r4qdHbjN"

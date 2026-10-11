@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "eaa6cba6e57a1293bae78ed56b37a51a050b6a22"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/c8oeXitb/versions/3hV1ioTg/zero-lib-26.3-fabric-1.0.4.jar"
 
 [update]
-[update.curseforge]
-file-id = 8980599
-project-id = 1639878
+[update.modrinth]
+mod-id = "c8oeXitb"
+version = "3hV1ioTg"

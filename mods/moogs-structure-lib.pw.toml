@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "df42c110f5e741d56a0c0676fc4c702ae317fd5e"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/1oUDhxuy/versions/EYVYgogR/MoogsStructureLib-fabric-26.3-3.3.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 8902088
-project-id = 1337167
+[update.modrinth]
+mod-id = "1oUDhxuy"
+version = "EYVYgogR"

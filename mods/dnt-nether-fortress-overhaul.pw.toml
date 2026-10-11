@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "714f7e22e21a78314ec70deea3a494c11655c3f4"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/8Dbnvm77/versions/IxUX6U93/dungeons-and-taverns-nether-fortress-overhaul-3.2.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 8926235
-project-id = 1053229
+[update.modrinth]
+mod-id = "8Dbnvm77"
+version = "IxUX6U93"

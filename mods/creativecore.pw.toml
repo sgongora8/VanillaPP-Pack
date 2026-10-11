@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "80a0fc2ac1269e037b044dc70b416a6e7a625647"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/OsZiaDHq/versions/cBV3NfW1/CreativeCore_FABRIC_v2.14.16_mc26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8894326
-project-id = 257814
+[update.modrinth]
+mod-id = "OsZiaDHq"
+version = "cBV3NfW1"

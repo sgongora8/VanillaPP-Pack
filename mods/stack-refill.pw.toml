@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "cc9b6e1c6620bb42e4c1bfcba3ed91ebd6378887"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/mQWkB9ON/versions/hY9v4AzA/stackrefill-26.3.0-5.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 8925261
-project-id = 411813
+[update.modrinth]
+mod-id = "mQWkB9ON"
+version = "hY9v4AzA"

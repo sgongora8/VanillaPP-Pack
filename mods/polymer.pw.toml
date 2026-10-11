@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "8571b8aaa1533e08739e75f01020836a76daa30d"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/xGdtZczs/versions/REBDssAz/polymer-bundled-0.18.2%2B26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8914232
-project-id = 551890
+[update.modrinth]
+mod-id = "xGdtZczs"
+version = "REBDssAz"

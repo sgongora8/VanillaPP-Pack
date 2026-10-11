@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "9c11805cc34153fd89cb9fecf78be2b5a803b373"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/4I1XuqiY/versions/N7d5LddE/entity_model_features-3.3.11-26.3-fabric.jar"
 
 [update]
-[update.curseforge]
-file-id = 9064964
-project-id = 844662
+[update.modrinth]
+mod-id = "4I1XuqiY"
+version = "N7d5LddE"

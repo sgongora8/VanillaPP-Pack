@@ -5,9 +5,9 @@ side = "both"
 [download]
 hash-format = "sha1"
 hash = "e501e2c65609fc5dfec9d0eb501cf202104d0939"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/lWDHr9jE/versions/irrtYKCq/tectonic-3.0.29-fabric-26.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 8936400
-project-id = 686836
+[update.modrinth]
+mod-id = "lWDHr9jE"
+version = "irrtYKCq"
