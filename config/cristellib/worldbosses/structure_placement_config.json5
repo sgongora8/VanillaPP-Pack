@@ -1,0 +1,37 @@
+{
+	"dragon_altars": {
+		"salt": 73920411,
+		"separation": 12,
+		"spacing": 32
+	},
+	"gnome_villages": {
+		"salt": 58120937,
+		"separation": 10,
+		"spacing": 28
+	},
+	"nymph_villages": {
+		"salt": 74310285,
+		"separation": 10,
+		"spacing": 28
+	},
+	"sentinel_arenas": {
+		"salt": 61729351,
+		"separation": 6,
+		"spacing": 16
+	},
+	"shadow_altars": {
+		"salt": 48213967,
+		"separation": 12,
+		"spacing": 32
+	},
+	"sky_altars": {
+		"salt": 29384756,
+		"separation": 12,
+		"spacing": 32
+	},
+	"weaver_altars": {
+		"salt": 90417263,
+		"separation": 8,
+		"spacing": 24
+	}
+}

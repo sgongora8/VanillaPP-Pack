@@ -1,0 +1,89 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 500,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:experience_bottle",
+      // Name shown in the opening animation.
+      "label": "Experience Bottles",
+      // Least amount.
+      "minCount": 12,
+      // Most amount.
+      "maxCount": 24,
+      // XP given together with this reward.
+      "xpBonus": 80,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:emerald_block",
+      // Name shown in the opening animation.
+      "label": "Emerald Blocks",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 5,
+      // XP given together with this reward.
+      "xpBonus": 90,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:amethyst_shard",
+      // Name shown in the opening animation.
+      "label": "Amethyst Shards",
+      // Least amount.
+      "minCount": 16,
+      // Most amount.
+      "maxCount": 32,
+      // XP given together with this reward.
+      "xpBonus": 80,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:experience_bottle",
+      // Name shown in the opening animation.
+      "label": "Large Experience Bottle Bundle",
+      // Least amount.
+      "minCount": 24,
+      // Most amount.
+      "maxCount": 40,
+      // XP given together with this reward.
+      "xpBonus": 150,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:diamond_block",
+      // Name shown in the opening animation.
+      "label": "Diamond Blocks",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 3,
+      // XP given together with this reward.
+      "xpBonus": 180,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 50,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:enchanted_golden_apple",
+      // Name shown in the opening animation.
+      "label": "Enchanted Golden Apple",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 300,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:netherite_scrap",
+      // Name shown in the opening animation.
+      "label": "Netherite Scraps",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 3,
+      // XP given together with this reward.
+      "xpBonus": 310,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:ancient_debris",
+      // Name shown in the opening animation.
+      "label": "Ancient Debris",
+      // Least amount.
+      "minCount": 3,
+      // Most amount.
+      "maxCount": 4,
+      // XP given together with this reward.
+      "xpBonus": 320,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:varkhul_shard",
+      // Name shown in the opening animation.
+      "label": "Varkhul Shard",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 4,
+      // XP given together with this reward.
+      "xpBonus": 350,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 90,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:varkhul_shard",
+      // Name shown in the opening animation.
+      "label": "Varkhul Shards",
+      // Least amount.
+      "minCount": 3,
+      // Most amount.
+      "maxCount": 5,
+      // XP given together with this reward.
+      "xpBonus": 460,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 105,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:netherite_scrap",
+      // Name shown in the opening animation.
+      "label": "Infernal Netherite Scraps",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 6,
+      // XP given together with this reward.
+      "xpBonus": 440,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 85,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+name = "Amber Lib"
+filename = "amber-fabric-11.5.0+26.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2025b35fa829791643f5cfaaa0767c6b58ee75e4"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9022586
+project-id = 1139910

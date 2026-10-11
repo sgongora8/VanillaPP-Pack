@@ -1,0 +1,13 @@
+name = "Family Tree"
+filename = "familytree-1.1.0+26.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5deb79d7429714c52c73256e92574b813e5df708"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9015269
+project-id = 1718788

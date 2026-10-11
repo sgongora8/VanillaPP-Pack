@@ -1,0 +1,13 @@
+name = "Reach Behind"
+filename = "reachbehind-v26.3.0-mc26.3.x+fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2fdb969c89094aae475c7717ff08bb50a61b27ad"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8954050
+project-id = 1572990

@@ -1,0 +1,13 @@
+name = "Stellarity"
+filename = "Stellarity-6.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1e50711590bc91b74d844dbb3087ba640aae1d43"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8951534
+project-id = 883166

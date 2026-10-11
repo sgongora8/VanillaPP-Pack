@@ -1,0 +1,13 @@
+name = "Zero Lib"
+filename = "zero-lib-26.3-fabric-1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "eaa6cba6e57a1293bae78ed56b37a51a050b6a22"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8980599
+project-id = 1639878

@@ -1,0 +1,105 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 520,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:netherrack",
+      // Name shown in the opening animation.
+      "label": "Netherrack",
+      // Least amount.
+      "minCount": 32,
+      // Most amount.
+      "maxCount": 64,
+      // XP given together with this reward.
+      "xpBonus": 20,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:magma_cream",
+      // Name shown in the opening animation.
+      "label": "Magma Cream",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 10,
+      // XP given together with this reward.
+      "xpBonus": 30,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:blaze_powder",
+      // Name shown in the opening animation.
+      "label": "Blaze Powder",
+      // Least amount.
+      "minCount": 6,
+      // Most amount.
+      "maxCount": 14,
+      // XP given together with this reward.
+      "xpBonus": 30,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:experience_bottle",
+      // Name shown in the opening animation.
+      "label": "Experience Bottles",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 8,
+      // XP given together with this reward.
+      "xpBonus": 35,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:blackstone",
+      // Name shown in the opening animation.
+      "label": "Charred Blackstone",
+      // Least amount.
+      "minCount": 24,
+      // Most amount.
+      "maxCount": 48,
+      // XP given together with this reward.
+      "xpBonus": 25,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:fire_charge",
+      // Name shown in the opening animation.
+      "label": "Fire Charges",
+      // Least amount.
+      "minCount": 8,
+      // Most amount.
+      "maxCount": 18,
+      // XP given together with this reward.
+      "xpBonus": 35,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 70,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

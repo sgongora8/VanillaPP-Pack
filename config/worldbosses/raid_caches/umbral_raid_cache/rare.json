@@ -1,0 +1,73 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 150,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:primordium_ingot",
+      // Name shown in the opening animation.
+      "label": "Primordium Ingots",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 2,
+      // XP given together with this reward.
+      "xpBonus": 380,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:netherite_scrap",
+      // Name shown in the opening animation.
+      "label": "Netherite Scraps",
+      // Least amount.
+      "minCount": 3,
+      // Most amount.
+      "maxCount": 6,
+      // XP given together with this reward.
+      "xpBonus": 340,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 90,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:echo_shard",
+      // Name shown in the opening animation.
+      "label": "Echo Shards",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 4,
+      // XP given together with this reward.
+      "xpBonus": 300,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:sentinel_heart",
+      // Name shown in the opening animation.
+      "label": "Sentinel Heart",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 360,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 60,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

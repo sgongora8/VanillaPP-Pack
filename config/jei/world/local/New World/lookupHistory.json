@@ -1,0 +1,20 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"upgraded-iron-chests:diamond_chest"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"travelersbackpack:standard","components":"{\"travelersbackpack:starter_upgrades\":[{item:{id:\"travelersbackpack:tanks_upgrade\"},slot:0}]}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:andesite_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:purpur_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:red_nether_bricks_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:sandstone_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:end_stone_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:deepslate_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:blackstone_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:mud_bricks_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:prismarine_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:mossy_andesite_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:lodestone"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"travelersbackpack:standard","components":"{\"travelersbackpack:render_info\":{RenderInfo:{}},\"travelersbackpack:sleeping_bag_color\":-1,\"travelersbackpack:storage_slots\":18,\"travelersbackpack:tool_slots\":0,\"travelersbackpack:upgrade_slots\":0}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"travelersbackpack:standard"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"travelersbackpack:netherite","components":"{\"travelersbackpack:starter_upgrades\":[{item:{id:\"travelersbackpack:tanks_upgrade\"},slot:0}]}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"shippy-ships:ship_builder"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

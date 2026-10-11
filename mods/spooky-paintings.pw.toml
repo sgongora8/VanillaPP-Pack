@@ -1,0 +1,13 @@
+name = "Spooky Paintings"
+filename = "spookypaintingsleonnf-1.0.0 Fabric 26.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8b7a324b54d8031e4257114a0ea522d00cc26264"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8912880
+project-id = 1001389

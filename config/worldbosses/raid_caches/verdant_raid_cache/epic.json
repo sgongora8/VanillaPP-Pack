@@ -1,0 +1,89 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 50,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:enchanted_golden_apple",
+      // Name shown in the opening animation.
+      "label": "Enchanted Golden Apple",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 250,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:netherite_scrap",
+      // Name shown in the opening animation.
+      "label": "Netherite Scraps",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 2,
+      // XP given together with this reward.
+      "xpBonus": 260,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:totem_of_undying",
+      // Name shown in the opening animation.
+      "label": "Totems of Undying",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 2,
+      // XP given together with this reward.
+      "xpBonus": 240,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:sylvaron_shard",
+      // Name shown in the opening animation.
+      "label": "Sylvaron Shard",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 4,
+      // XP given together with this reward.
+      "xpBonus": 350,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 90,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:sylvaron_shard",
+      // Name shown in the opening animation.
+      "label": "Sylvaron Shards",
+      // Least amount.
+      "minCount": 3,
+      // Most amount.
+      "maxCount": 5,
+      // XP given together with this reward.
+      "xpBonus": 400,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 95,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

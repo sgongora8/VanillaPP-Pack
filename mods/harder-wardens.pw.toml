@@ -1,0 +1,13 @@
+name = "Harder Wardens"
+filename = "harder-wardens-1.1.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d73f143be0cb599ca703c20f5d7cd83c6aa7877c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8888686
+project-id = 1487893

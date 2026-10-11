@@ -1,0 +1,13 @@
+name = "Repurposed Structures (Fabric)"
+filename = "repurposed_structures-7.8.2+26.3-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ef9ecd0984f148ba07aad2d650d126ca8cb8797e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8954496
+project-id = 391366

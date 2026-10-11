@@ -1,0 +1,13 @@
+name = "Freecam"
+filename = "freecam-fabric-1.5.0-alpha.2+mc26.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bc05706d31f782f40ca6a100a81f21de84fc32d0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8958272
+project-id = 557076

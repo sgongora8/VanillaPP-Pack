@@ -1,0 +1,13 @@
+name = "Measurements"
+filename = "Measurements-fabric-26.3-6.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "0330144eef4f46234e2ef72b409d0c0ebb61a083"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8907263
+project-id = 478559

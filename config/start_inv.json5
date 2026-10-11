@@ -1,0 +1,4 @@
+{
+	// Time of Invulnerability in Seconds (0 = disabled)
+	"timeSeconds": 15
+}

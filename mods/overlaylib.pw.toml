@@ -1,0 +1,13 @@
+name = "OverlayLib"
+filename = "overlaylib-0.12.1+26.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fcfc27e65d315e75e6cc03793b51e5e5f68d119a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9041511
+project-id = 1447526

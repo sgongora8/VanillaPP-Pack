@@ -1,0 +1,7 @@
+{
+  "difficulty": "CUSTOM",
+  "customHealth": 800.0,
+  "customDamageMultiplier": 2.0,
+  "customLootPreset": "HARD",
+  "customXpReward": 45
+}

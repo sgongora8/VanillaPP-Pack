@@ -1,0 +1,105 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 520,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:soul_sand",
+      // Name shown in the opening animation.
+      "label": "Soul Sand",
+      // Least amount.
+      "minCount": 16,
+      // Most amount.
+      "maxCount": 32,
+      // XP given together with this reward.
+      "xpBonus": 20,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:soul_soil",
+      // Name shown in the opening animation.
+      "label": "Soul Soil",
+      // Least amount.
+      "minCount": 16,
+      // Most amount.
+      "maxCount": 32,
+      // XP given together with this reward.
+      "xpBonus": 20,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:bone",
+      // Name shown in the opening animation.
+      "label": "Bones",
+      // Least amount.
+      "minCount": 8,
+      // Most amount.
+      "maxCount": 18,
+      // XP given together with this reward.
+      "xpBonus": 25,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:experience_bottle",
+      // Name shown in the opening animation.
+      "label": "Experience Bottles",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 8,
+      // XP given together with this reward.
+      "xpBonus": 35,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:soul_lantern",
+      // Name shown in the opening animation.
+      "label": "Soul Lanterns",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 10,
+      // XP given together with this reward.
+      "xpBonus": 35,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 70,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:bone_block",
+      // Name shown in the opening animation.
+      "label": "Bone Blocks",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 12,
+      // XP given together with this reward.
+      "xpBonus": 30,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

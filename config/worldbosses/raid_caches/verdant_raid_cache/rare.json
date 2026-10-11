@@ -1,0 +1,105 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 140,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:diamond",
+      // Name shown in the opening animation.
+      "label": "Diamonds",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 7,
+      // XP given together with this reward.
+      "xpBonus": 120,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:totem_of_undying",
+      // Name shown in the opening animation.
+      "label": "Totem of Undying",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 150,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:netherite_scrap",
+      // Name shown in the opening animation.
+      "label": "Netherite Scrap",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 140,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:sylvaron_shard",
+      // Name shown in the opening animation.
+      "label": "Sylvaron Shard",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 2,
+      // XP given together with this reward.
+      "xpBonus": 180,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 70,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:emerald_block",
+      // Name shown in the opening animation.
+      "label": "Emerald Blocks",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 4,
+      // XP given together with this reward.
+      "xpBonus": 140,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 75,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:heart_of_the_sea",
+      // Name shown in the opening animation.
+      "label": "Grove Heart Relic",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 240,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 25,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

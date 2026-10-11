@@ -1,0 +1,13 @@
+name = "DnT Jungle Temple Overhaul"
+filename = "DnT-jungle-temple-overhaul-2.2 [Fabric].jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9c14c5dc931b0b6aef5f96dc0a16ff248d860dcd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8903592
+project-id = 1053226

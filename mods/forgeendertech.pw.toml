@@ -1,0 +1,13 @@
+name = "ForgeEndertech"
+filename = "forgeendertech-26.3.0.0-fabric-build.0062.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "449d8b9d92906bbceaac4c5166a4a21761055ff9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8921676
+project-id = 244844

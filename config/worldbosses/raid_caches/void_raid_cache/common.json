@@ -1,0 +1,105 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 520,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:chorus_fruit",
+      // Name shown in the opening animation.
+      "label": "Chorus Fruit",
+      // Least amount.
+      "minCount": 8,
+      // Most amount.
+      "maxCount": 18,
+      // XP given together with this reward.
+      "xpBonus": 25,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:end_stone",
+      // Name shown in the opening animation.
+      "label": "End Stone",
+      // Least amount.
+      "minCount": 24,
+      // Most amount.
+      "maxCount": 48,
+      // XP given together with this reward.
+      "xpBonus": 20,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:ender_pearl",
+      // Name shown in the opening animation.
+      "label": "Ender Pearls",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 10,
+      // XP given together with this reward.
+      "xpBonus": 35,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:experience_bottle",
+      // Name shown in the opening animation.
+      "label": "Experience Bottles",
+      // Least amount.
+      "minCount": 5,
+      // Most amount.
+      "maxCount": 10,
+      // XP given together with this reward.
+      "xpBonus": 40,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:purpur_pillar",
+      // Name shown in the opening animation.
+      "label": "Purpur Pillars",
+      // Least amount.
+      "minCount": 8,
+      // Most amount.
+      "maxCount": 18,
+      // XP given together with this reward.
+      "xpBonus": 40,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 70,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:end_rod",
+      // Name shown in the opening animation.
+      "label": "End Rods",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 10,
+      // XP given together with this reward.
+      "xpBonus": 45,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 70,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

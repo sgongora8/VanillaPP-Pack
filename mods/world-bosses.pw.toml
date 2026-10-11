@@ -1,0 +1,13 @@
+name = "World Bosses"
+filename = "world-bosses-fabric-26.3-2.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4a442d84b1c09763e5ec6d7d866c52ac79a02864"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9024882
+project-id = 1545677

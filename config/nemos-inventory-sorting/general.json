@@ -1,0 +1,10 @@
+{
+  "includeHotbarByDefault": false,
+  "enableDragQuickMove": true,
+  "enableSplitQuickMove": true,
+  "enableScrollTransfer": true,
+  "enableSlotLocking": true,
+  "enableKeyMappings": true,
+  "enableHoverKeyMappings": true,
+  "enableContainerKeyMappings": true
+}

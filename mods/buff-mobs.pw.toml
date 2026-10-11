@@ -1,0 +1,13 @@
+name = "BuffMobs"
+filename = "buffmobs-3.3.3+mc26.1-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "541c8d03706166d32d9493febdca2ceeda7c3946"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8934082
+project-id = 1325553

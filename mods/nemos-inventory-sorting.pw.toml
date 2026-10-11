@@ -1,0 +1,13 @@
+name = "Nemo's Inventory Sorting"
+filename = "nemos-inventory-sorting-Fabric-26.3-1.22.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bbd3480357d3f152cfd99e9a60f49c0f7e72e989"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8948978
+project-id = 1148320

@@ -1,0 +1,13 @@
+name = "Light Overlay"
+filename = "light-overlay-2.13.0+26.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d4c232fb32c912bcc508f84c99599ce508a4e5a6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9041647
+project-id = 1376481

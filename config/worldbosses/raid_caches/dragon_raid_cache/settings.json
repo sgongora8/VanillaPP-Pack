@@ -1,0 +1,10 @@
+{
+  // Name shown when the cache is opened.
+  "displayName": "Dragon Raid Cache",
+  // Speed of the opening animation: ticks per step (lower = faster).
+  "ticksPerReelStep": 4,
+  // Steps the reel turns before it stops.
+  "reelSteps": 18,
+  // Version of the default loot. Do not change.
+  "lootPresetVersion": 2
+}

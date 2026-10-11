@@ -1,0 +1,57 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 60,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:enchanted_golden_apple",
+      // Name shown in the opening animation.
+      "label": "Enchanted Golden Apples",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 4,
+      // XP given together with this reward.
+      "xpBonus": 700,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 90,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:netherite_ingot",
+      // Name shown in the opening animation.
+      "label": "Netherite Hoard",
+      // Least amount.
+      "minCount": 3,
+      // Most amount.
+      "maxCount": 5,
+      // XP given together with this reward.
+      "xpBonus": 800,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:heavy_core",
+      // Name shown in the opening animation.
+      "label": "Heavy Core",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 800,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 50,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+name = "Shogi"
+filename = "shogi-fabric-26.3-26.3.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6ca4cc4ba8186635a221ff678e3e277b4df6c4d2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8889791
+project-id = 1475746

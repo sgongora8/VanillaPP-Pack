@@ -1,0 +1,13 @@
+name = "Elytra Trims"
+filename = "elytratrims-fabric-4.9.1+26.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "76553c51e0a4268e482d0a97711891f4e2a5bc36"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8989092
+project-id = 876199

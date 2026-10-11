@@ -1,0 +1,13 @@
+name = "VANILLA+ Server"
+author = "Lion"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "094caf213db8e9481642ccbf0f6f71279ce883a3b1439cbf0fa6148d10f6ff4b"
+
+[versions]
+fabric = "0.19.5"
+minecraft = "26.3"

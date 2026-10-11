@@ -1,0 +1,13 @@
+name = "MOS - Moog's Ocean Structures"
+filename = "MoogsOceanStructures-universal-1.21-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e272a06fee7e4b0a4c2efe8c1d338f7e250a0bd9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8902208
+project-id = 1628830

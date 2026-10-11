@@ -1,0 +1,5 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"travelersbackpack:standard","components":"{\"travelersbackpack:starter_upgrades\":[{item:{id:\"travelersbackpack:tanks_upgrade\"},slot:0}]}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"waystones:andesite_waystone"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

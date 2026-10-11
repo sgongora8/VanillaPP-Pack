@@ -1,0 +1,105 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 280,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:purpur_block",
+      // Name shown in the opening animation.
+      "label": "Purpur Blocks",
+      // Least amount.
+      "minCount": 12,
+      // Most amount.
+      "maxCount": 28,
+      // XP given together with this reward.
+      "xpBonus": 70,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:shulker_shell",
+      // Name shown in the opening animation.
+      "label": "Shulker Shell",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 120,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 55,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:diamond",
+      // Name shown in the opening animation.
+      "label": "Diamonds",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 4,
+      // XP given together with this reward.
+      "xpBonus": 95,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:golden_apple",
+      // Name shown in the opening animation.
+      "label": "Golden Apple",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 95,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:end_crystal",
+      // Name shown in the opening animation.
+      "label": "End Crystal",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 2,
+      // XP given together with this reward.
+      "xpBonus": 120,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 65,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:ender_eye",
+      // Name shown in the opening animation.
+      "label": "Eyes of Ender",
+      // Least amount.
+      "minCount": 3,
+      // Most amount.
+      "maxCount": 7,
+      // XP given together with this reward.
+      "xpBonus": 100,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

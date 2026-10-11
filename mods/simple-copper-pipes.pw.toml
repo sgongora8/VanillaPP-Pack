@@ -1,0 +1,13 @@
+name = "Simple Copper Pipes"
+filename = "SimpleCopperPipes-2.2-mc26.3-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5fd1bf8c7b814483b445aadf6d98983ca817c1f7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8936431
+project-id = 571336

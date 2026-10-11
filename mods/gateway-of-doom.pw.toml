@@ -1,0 +1,13 @@
+name = "Gateway of Doom"
+filename = "gatewayofdoom-fabric-26.3-2.2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7903eba804452bc34d4659ffafc350e7756514da"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8893540
+project-id = 1499145

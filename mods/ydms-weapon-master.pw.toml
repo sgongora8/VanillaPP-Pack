@@ -1,0 +1,13 @@
+name = "YDM's Weapon Master"
+filename = "weaponmaster_ydm-4.4.4-fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6e393e646f40e426851255f1673a26d64d4bf53e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8905060
+project-id = 608235

@@ -1,0 +1,5 @@
+# Bows that cannot be used by players (must be full item ID, like "more_bows_and_arrows:amethyst_bow"
+banned_bows = []
+# Arrows that cannot be used by players (must be full item ID, like "more_bows_and_arrows:amethyst_arrow"
+banned_arrows = []
+

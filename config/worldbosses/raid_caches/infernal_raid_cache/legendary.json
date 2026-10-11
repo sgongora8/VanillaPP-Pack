@@ -1,0 +1,105 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 10,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:netherite_ingot",
+      // Name shown in the opening animation.
+      "label": "Netherite Ingot",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 580,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:nether_star",
+      // Name shown in the opening animation.
+      "label": "Nether Star",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 720,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:enchanted_golden_apple",
+      // Name shown in the opening animation.
+      "label": "Enchanted Golden Apples",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 2,
+      // XP given together with this reward.
+      "xpBonus": 620,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:varkhul_trophy",
+      // Name shown in the opening animation.
+      "label": "Varkhul Trophy",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 950,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 35,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:varkhul_shard",
+      // Name shown in the opening animation.
+      "label": "Varkhul Shard",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 8,
+      // XP given together with this reward.
+      "xpBonus": 700,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 120,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:varkhul_shard",
+      // Name shown in the opening animation.
+      "label": "Varkhul Shard Bundle",
+      // Least amount.
+      "minCount": 8,
+      // Most amount.
+      "maxCount": 12,
+      // XP given together with this reward.
+      "xpBonus": 920,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 140,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

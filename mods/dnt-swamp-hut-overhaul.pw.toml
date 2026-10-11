@@ -1,0 +1,13 @@
+name = "DnT Swamp Hut Overhaul"
+filename = "DnT-swamp-hut-overhaul-2.4 [Fabric].jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5774f623ca6443214fc2960195bdb98e60904757"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8903583
+project-id = 920439

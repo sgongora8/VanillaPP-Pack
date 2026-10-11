@@ -1,0 +1,2709 @@
+// World Bosses settings. Lines starting with // explain the setting below them.
+// After changes, use /worldbosses reload or restart the server.
+// Delete this file to get the defaults back.
+// Times: "ticks" are 1/20 of a second. Damage and health: 2 = one heart.
+{
+  // Tells joining players which World Bosses version the server runs.
+  "versionCheck": {
+    // Send the server's version to players when they join.
+    "enabled": true
+  },
+  // Extra output for testing boss fights. Leave off on a normal server.
+  "debug": {
+    // Debug mode: bosses print what they do, and the mace limits are switched off.
+    "enabled": false,
+    // Show debug messages in the chat of players nearby.
+    "broadcastToPlayers": true,
+    // Write debug messages to the server log.
+    "logToConsole": true,
+    // Players within this many blocks get the debug messages.
+    "broadcastRadius": 96,
+    // Sylvaron: report who was hit by his roots.
+    "showRootImpactResults": true
+  },
+  // Turn groups of chat messages on or off.
+  "messages": {
+    // Why a ritual cannot start (wrong dimension, boss already alive nearby, ...).
+    "validationMessages": true,
+    // Messages when using a shrine.
+    "shrineMessages": true,
+    // The countdown while a ritual runs.
+    "ritualCountdownMessages": true,
+    // Announcements when a boss enters a new phase.
+    "phaseMessages": true,
+    // Notes when a boss gets stronger because more players joined.
+    "raidScalingMessages": true,
+    // Messages about rewards after a kill.
+    "rewardMessages": true,
+    // Messages when a raid cache is opened.
+    "raidCacheMessages": true,
+    // The server version message on join.
+    "versionCheckMessages": true,
+    // Results of the Shrine Locator and the Realm Compass.
+    "locatorMessages": true,
+    // Log each placed shrine in the chat. Only useful for testing.
+    "worldGenerationMessages": false
+  },
+  // Where and how the boss shrines are placed in the world.
+  "worldGeneration": {
+    // Place shrines in the world at all.
+    "enabled": true,
+    // How often (in ticks, 20 = 1 second) the mod looks for places to put new shrines near players.
+    "checkIntervalTicks": 80,
+    // Look for shrine spots within this many chunks around each player (max 12).
+    "playerChunkRadius": 7,
+    // Blocks cleared around a shrine so it is not buried.
+    "shrineClearRadius": 6,
+    // How high above a shrine blocks are cleared.
+    "shrineClearHeight": 9,
+    // Search for flat ground and fill gaps under shrines.
+    "stabilizeShrineTerrain": true,
+    // How far to search for flat ground around the planned spot.
+    "shrineTerrainSearchRadius": 8,
+    // Most height difference allowed on the ground under a shrine.
+    "maxShrineTerrainHeightDifference": 4,
+    // Build a foundation under shrines that stand over a drop.
+    "buildShrineFoundations": true,
+    // How deep such a foundation may go.
+    "shrineFoundationDepth": 10,
+    // Wider search if no flat ground was found close by.
+    "fallbackShrineTerrainSearchRadius": 32,
+    // Height difference allowed during that wider search.
+    "fallbackMaxShrineTerrainHeightDifference": 10,
+    // How many spots are tried per region before giving up (1-16).
+    "maxPlacementAttemptsPerRegion": 4,
+    // Let bosses be summoned at generated shrines even outside their allowed biomes.
+    "ignoreBiomeRulesForGeneratedShrines": true,
+    // Place Overworld shrines.
+    "generateOverworldShrines": true,
+    // Place Nether shrines.
+    "generateNetherShrines": true,
+    // Place End shrines.
+    "generateEndShrines": true,
+    // Place the Primordial Nexus shrines for Astrael.
+    "generatePrimordialNexusShrines": true,
+    // Spacing of Overworld shrines.
+    "overworldShrine": {
+      // About one shrine per square of this many chunks (16 blocks each). Higher = rarer.
+      "spacingChunks": 34,
+      // Random seed for the placement. Change it to move all shrines of this type.
+      "salt": 925813
+    },
+    // Spacing of Nether shrines.
+    "netherShrine": {
+      // About one shrine per square of this many chunks (16 blocks each). Higher = rarer.
+      "spacingChunks": 38,
+      // Random seed for the placement. Change it to move all shrines of this type.
+      "salt": 492271
+    },
+    // Spacing of End shrines.
+    "endShrine": {
+      // About one shrine per square of this many chunks (16 blocks each). Higher = rarer.
+      "spacingChunks": 52,
+      // Random seed for the placement. Change it to move all shrines of this type.
+      "salt": 823111
+    },
+    // Spacing of Primordial Nexus shrines.
+    "primordialNexusShrine": {
+      // About one shrine per square of this many chunks (16 blocks each). Higher = rarer.
+      "spacingChunks": 118,
+      // Random seed for the placement. Change it to move all shrines of this type.
+      "salt": 1289971
+    }
+  },
+  // Particles and sounds around shrines.
+  "shrineAtmosphere": {
+    // Particles and sounds around shrines.
+    "enabled": true,
+    // How often shrines near players are updated (ticks).
+    "scanIntervalTicks": 20,
+    // Shrines within this many blocks of a player get effects.
+    "scanHorizontalRadius": 14,
+    // Same, but up and down.
+    "scanVerticalRadius": 5,
+    // Particles per update.
+    "particlesPerPulse": 14,
+    // Play ambient shrine sounds.
+    "ambientSounds": true,
+    // A sound plays about once every this many updates.
+    "soundChancePerPulse": 14
+  },
+  // Extra particles around living bosses.
+  "bossVisuals": {
+    // Extra particles around living bosses.
+    "enabled": true,
+    // How often particles are shown (ticks).
+    "particleIntervalTicks": 10,
+    // Only show them if a player is within this many blocks.
+    "playerScanRadius": 96,
+    // Particles each time.
+    "particlesPerPulse": 4,
+    // Second particle type about once every this many times.
+    "secondaryParticleChance": 4,
+    // Stronger particles when a boss is low on health.
+    "enragePulse": true,
+    // Health share (0.34 = 34%) below which the stronger particles start.
+    "enrageHealthPercent": 0.34,
+    // Extra particles when low on health.
+    "enrageExtraParticles": 4
+  },
+  // The effects when a boss appears.
+  "bossIntro": {
+    // Show the entrance effects when a boss appears.
+    "enabled": true,
+    // Players within this many blocks see the intro message.
+    "broadcastRadius": 96,
+    // More (above 1) or fewer (below 1) intro particles.
+    "particleMultiplier": 1.0,
+    // Play the intro sounds.
+    "playSounds": true,
+    // Show the second intro particle type.
+    "playSecondaryParticles": true
+  },
+  // Bosses slowly heal while they fight, faster the more players take part.
+  "bossSelfHeal": {
+    // Bosses heal while they fight.
+    "enabled": true,
+    // Health healed per second.
+    "baseHealPerSecond": 1.0,
+    // Extra healing per second for every player in the fight.
+    "healPerActivePlayerPerSecond": 0.5,
+    // Players within this many blocks count as in the fight.
+    "activeParticipantRadius": 96,
+    // Heal at least as if this many players were fighting.
+    "minActivePlayers": 1,
+    // Count at most this many players.
+    "maxScaledPlayers": 8,
+    // Only heal while the boss has someone to fight.
+    "requireCombatTarget": true,
+    // Stop healing when no player is near.
+    "pauseWhenNoPlayersNearby": true,
+    // Wait this long after the boss appears before it starts healing.
+    "startDelaySeconds": 10,
+    // Heal in steps every this many seconds.
+    "tickIntervalSeconds": 2,
+    // Never heal more than this percent of max health per second (0 = no limit).
+    "maxHealPercentPerSecond": 1.0
+  },
+  // A damage aura that hits players who stay close to a boss.
+  "bossCombatPressure": {
+    // Damage aura around bosses.
+    "enabled": true,
+    // Seconds between two hits of the aura.
+    "tickIntervalSeconds": 6,
+    // Players within this many blocks are hit.
+    "radius": 10,
+    // Damage per hit (2 = one heart).
+    "damage": 1.5,
+    // Extra damage per player in the fight.
+    "damagePerActivePlayer": 0.35,
+    // Count at most this many players.
+    "maxScaledPlayers": 8,
+    // How long the aura's effects last.
+    "effectDurationSeconds": 4,
+    // Apply the boss's effects (slowness, weakness, ...).
+    "enableDebuffs": true,
+    // Deal the aura damage.
+    "enableDamageOverTime": true,
+    // Show particles for the aura.
+    "enableParticles": true,
+    // Play sounds for the aura.
+    "enableSounds": true,
+    // More or fewer aura particles.
+    "particleMultiplier": 1.0,
+    // Morvath heals by this share of the aura damage he deals (0 = off).
+    "morvathLifeStealMultiplier": 1.0
+  },
+  // Settings that apply to all bosses: global multipliers, arena rules, limits.
+  "bossScaling": {
+    // Use the settings of this section.
+    "enabled": true,
+    // Multiplies the health of every boss.
+    "globalHealthMultiplier": 1.0,
+    // Multiplies the damage of every boss.
+    "globalDamageMultiplier": 1.0,
+    // Multiplies the XP every boss drops.
+    "globalXpMultiplier": 1.0,
+    // Extra raid caches each player gets per kill.
+    "extraRaidCaches": 0,
+    // Most bosses that may be alive at once near a shrine (0 = no limit).
+    "maxAliveBossesPerWorld": 5,
+    // Heal and pull back bosses whose fight leaves the arena (pillaring, luring away).
+    "enableAntiCheese": true,
+    // Radius of the arena around the spawn point, in blocks.
+    "arenaRadius": 64,
+    // The boss may go this far past the arena before it is pulled back.
+    "bossLeashExtraRadius": 32,
+    // Healing per second while all players are outside the arena.
+    "outOfArenaHealPerSecond": 1.0,
+    // Healing per second while the boss itself is outside the arena.
+    "bossOutsideArenaHealPerSecond": 0.5,
+    // Teleport a boss back that stays outside the arena too long.
+    "teleportBossBackToArena": true,
+    // How long outside the arena before it is teleported back.
+    "teleportBackAfterSeconds": 20,
+    // Seconds between two arena warnings to players.
+    "warningIntervalSeconds": 10,
+    // Radius in which living bosses are counted for maxAliveBossesPerWorld.
+    "activeBossSearchRadius": 8192,
+    // A boss disappears after this many seconds (86400 = 24 hours, 0 = never).
+    "maxBossLifetimeSeconds": 86400,
+    // Limit the damage of mace hits on bosses.
+    "enableMaceDamageCap": true,
+    // Most damage a single mace hit can deal to a boss.
+    "maxMaceDamage": 18.0,
+    // Players in creative mode count as fighters.
+    "countCreativePlayersAsArenaParticipants": true,
+    // Remove a boss when nobody has been near it for a while.
+    "despawnWhenNoPlayersNearby": false,
+    // How long with nobody near before it is removed.
+    "despawnAfterNoPlayersSeconds": 1800,
+    // Show arena warnings in the chat.
+    "warningMessages": true,
+    // Drop the rewards on the ground if nobody qualifies for them.
+    "dropRewardsWhenNoEligiblePlayers": true,
+    // Shrine rituals work in every dimension, e.g. Nether and End bosses in the Overworld. Biome rules then only apply in the boss's home dimension.
+    "allowAnyDimension": false
+  },
+  // Limits for pets from the Loyal Companions mod, so they cannot kill bosses on their own.
+  "loyalCompanionsCompatibility": {
+    // Limit the damage pets deal to bosses.
+    "enabled": true,
+    // Pets may deal at most this share of a boss's max health in total (0.5 = 50%).
+    "maxCompanionDamagePercentOfBossMaxHealth": 0.5,
+    // Most damage per pet hit (0 = no limit).
+    "maxCompanionDamagePerHit": 0.0,
+    // Pet hits always deal at least this much.
+    "minimumCompanionDamagePerHit": 1.0,
+    // A pet's owner counts as fighter when the pet hits the boss.
+    "recordCompanionOwnerAsParticipant": true,
+    // Log when a pet hit was reduced.
+    "debugDamageCaps": false
+  },
+  // The Shrine Locator Compass.
+  "shrineLocator": {
+    // How far the compass searches, in blocks.
+    "locateRadiusBlocks": 4096,
+    // Also show spots where a shrine will be placed once the area is explored.
+    "includePredictedWorldgenCandidates": true,
+    // Name the shrine type in the result.
+    "showShrineType": true,
+    // Show the coordinates.
+    "showCoordinates": true,
+    // Show the distance.
+    "showDistance": true,
+    // Play a sound when used.
+    "playSound": true,
+    // Show particles when used.
+    "spawnParticles": true,
+    // Build the found shrine right away if it only exists as a planned spot.
+    "generatePredictedShrinesOnLocate": true
+  },
+  // What the bosses drop to open the Worldbreaker portal.
+  "worldbreakerPortal": {
+    // Least Worldbreaker Dust per player from each of the six first bosses.
+    "dustPerBossMin": 2,
+    // Most Worldbreaker Dust per player.
+    "dustPerBossMax": 4,
+    // Primordial Sparks per player from Astrael.
+    "sparksPerAstraelKill": 1
+  },
+  // Natural mob spawning in the Worldbreaker realm.
+  "realmSpawning": {
+    // Most hostile mobs at once in the realm per player area (vanilla uses 70).
+    "monsterCap": 50
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "sylvaron": {
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 450.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 12.0,
+    // Armor points, like player armor.
+    "armor": 12.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 48.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.24,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.85,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 30,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 96,
+    // XP dropped when it dies.
+    "xpReward": 250,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 5,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": [
+        "minecraft:forest",
+        "minecraft:dark_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:old_growth_birch_forest"
+      ]
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "GREEN",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "YELLOW",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "RED",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Sylvaron enters Phase 2: The Grove Awakens!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Sylvaron enters Phase 3: Rootbound Enrage!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "aureon": {
+    // Aureon: a storm field that pulls players in and weakens them.
+    "staticStorm": {
+      // Damage per hit (2 = one heart).
+      "damage": 4.5,
+      // How hard players are pulled.
+      "pullStrength": 0.85,
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 4,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 1,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 35,
+      // How dense the chain particles are.
+      "chainVisualDensity": 3,
+      // Pull players to the middle of the storm.
+      "pullPlayersToStormCenter": true,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 5,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 10,
+      // Range of the skill, in blocks.
+      "radius": 9.0,
+      // Particles shown for it.
+      "particleCount": 170
+    },
+    // Aureon: dives down with lightning onto the spot he marked.
+    "lightningDive": {
+      // Damage per hit (2 = one heart).
+      "damage": 8.0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 7,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 12.0,
+      // Particles shown for it.
+      "particleCount": 130
+    },
+    // Aureon: a gust of wind that throws players back.
+    "windBurst": {
+      // Damage per hit (2 = one heart).
+      "damage": 5.0,
+      // How hard players are thrown back.
+      "knockbackStrength": 1.35,
+      // Seconds of slowness.
+      "slownessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 25,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 7.5,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Aureon: a ring of lightning that hurts everyone inside.
+    "thunderCage": {
+      // Damage each time it ticks.
+      "damagePerTick": 2.5,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 3,
+      // Seconds of slowness.
+      "slownessDurationSeconds": 3,
+      // How long it lasts.
+      "durationSeconds": 6,
+      // Seconds between two ticks of damage.
+      "tickIntervalSeconds": 1,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 34,
+      // Thickness of the lightning wall.
+      "wallThickness": 1.0,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 15,
+      // Range of the skill, in blocks.
+      "radius": 4.5,
+      // Particles shown for it.
+      "particleCount": 160
+    },
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 520.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 10.0,
+    // Armor points, like player armor.
+    "armor": 10.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 56.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.3,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.7,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 30,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 96,
+    // XP dropped when it dies.
+    "xpReward": 320,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 5,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": [
+        "minecraft:windswept_hills",
+        "minecraft:windswept_gravelly_hills",
+        "minecraft:windswept_forest",
+        "minecraft:jagged_peaks",
+        "minecraft:frozen_peaks",
+        "minecraft:stony_peaks",
+        "minecraft:meadow"
+      ]
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "BLUE",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "YELLOW",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "PURPLE",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Aureon enters Phase 2: The Stormfront Rises!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Aureon enters Phase 3: Thunderforged Enrage!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "nekhraz": {
+    // Nekhraz: a sandstorm that slows and blinds.
+    "sandstormVeil": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 1,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 5,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 11,
+      // Range of the skill, in blocks.
+      "radius": 9.0,
+      // Particles shown for it.
+      "particleCount": 130
+    },
+    // Nekhraz: burrows and bursts out under a player.
+    "burrowStrike": {
+      // Damage per hit (2 = one heart).
+      "damage": 9.0,
+      // Players this close to the impact are hit.
+      "hitRadius": 2.25,
+      // How hard players are thrown back.
+      "knockbackStrength": 1.15,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Seconds of slowness.
+      "slownessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 38,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 7,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 13.0,
+      // Particles shown for it.
+      "particleCount": 120
+    },
+    // Nekhraz: spikes that shoot out of the ground around players.
+    "ruinSpikes": {
+      // Damage per hit (2 = one heart).
+      "damage": 6.5,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.45,
+      // How far the impacts spread around each player.
+      "scatterRadius": 4.0,
+      // Spikes per player.
+      "spikesPerPlayer": 3,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 32,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 10,
+      // Range of the skill, in blocks.
+      "radius": 14.0,
+      // Particles shown for it.
+      "particleCount": 90
+    },
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 620.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 13.0,
+    // Armor points, like player armor.
+    "armor": 16.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 52.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.23,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.92,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 30,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 96,
+    // XP dropped when it dies.
+    "xpReward": 360,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 5,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": [
+        "minecraft:desert",
+        "minecraft:badlands",
+        "minecraft:eroded_badlands",
+        "minecraft:wooded_badlands"
+      ]
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "YELLOW",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "PURPLE",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "RED",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Nekhraz enters Phase 2: The Dunes Collapse!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Nekhraz enters Phase 3: Devouring Sandstorm!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "varkhul": {
+    // Varkhul: a burning swing in front of him.
+    "moltenCleave": {
+      // Damage per hit (2 = one heart).
+      "damage": 10.0,
+      // Width of the cone in front of the boss, in degrees.
+      "coneAngleDegrees": 80.0,
+      // Seconds players burn after a hit.
+      "fireSeconds": 5,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 1,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 5,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.5,
+      // Particles shown for it.
+      "particleCount": 130
+    },
+    // Varkhul: lava bursts out of the ground under players.
+    "lavaEruption": {
+      // Damage per hit (2 = one heart).
+      "damage": 8.0,
+      // Players this close to the impact are hit.
+      "hitRadius": 2.35,
+      // Seconds players burn after a hit.
+      "fireSeconds": 6,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 7,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 14.0,
+      // Particles shown for it.
+      "particleCount": 130
+    },
+    // Varkhul: chains that pull a player to him.
+    "hellchainPull": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.5,
+      // How hard players are pulled.
+      "pullStrength": 2.15,
+      // Pull while the skill is still winding up.
+      "prePullStrength": 0.12,
+      // Seconds players burn after a hit.
+      "fireSeconds": 5,
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 36,
+      // How dense the chain particles are.
+      "chainVisualDensity": 5,
+      // Particles per chain link.
+      "linkRingParticles": 8,
+      // Size of a chain link.
+      "linkRingRadius": 0.16,
+      // Already pull during the warning time.
+      "pullDuringTelegraph": true,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 5,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 18.0,
+      // Particles shown for it.
+      "particleCount": 150
+    },
+    // Varkhul: a ring of fire around a player.
+    "flamePrison": {
+      // Damage each time it ticks.
+      "damagePerTick": 3.0,
+      // Seconds players burn after a hit.
+      "fireSeconds": 4,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 3,
+      // How long it lasts.
+      "durationSeconds": 5,
+      // Seconds between two ticks of damage.
+      "tickIntervalSeconds": 1,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 36,
+      // Safe space in the middle of the fire ring.
+      "innerSafeRadius": 1.6,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 16,
+      // Range of the skill, in blocks.
+      "radius": 4.0,
+      // Particles shown for it.
+      "particleCount": 150
+    },
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 780.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 15.0,
+    // Armor points, like player armor.
+    "armor": 18.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 56.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.25,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.95,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 45,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 96,
+    // XP dropped when it dies.
+    "xpReward": 440,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 6,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": [
+        "minecraft:nether_wastes",
+        "minecraft:basalt_deltas",
+        "minecraft:crimson_forest"
+      ]
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "RED",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "YELLOW",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "PURPLE",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Varkhul enters Phase 2: The Forge Burns Hotter!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Varkhul enters Phase 3: Infernal Warpath!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "morvath": {
+    // Morvath: drains life from a player and heals himself.
+    "soulDrain": {
+      // Damage per hit (2 = one heart).
+      "damage": 8.0,
+      // Health the boss gets back.
+      "healAmount": 18.0,
+      // How hard players are pulled.
+      "pullStrength": 0.35,
+      // Seconds of wither.
+      "witherDurationSeconds": 5,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 38,
+      // How dense the chain particles are.
+      "chainVisualDensity": 4,
+      // Pull players while draining them.
+      "pullDuringDrain": true,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 5,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 10,
+      // Range of the skill, in blocks.
+      "radius": 16.0,
+      // Particles shown for it.
+      "particleCount": 150
+    },
+    // Morvath: a dark zone that withers everyone inside.
+    "eclipseZone": {
+      // Damage each time it ticks.
+      "damagePerTick": 3.0,
+      // Players this close to the impact are hit.
+      "hitRadius": 3.0,
+      // How long it lasts.
+      "durationSeconds": 5,
+      // Seconds between two ticks of damage.
+      "tickIntervalSeconds": 1,
+      // Seconds of wither.
+      "witherDurationSeconds": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 7,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 13,
+      // Range of the skill, in blocks.
+      "radius": 15.0,
+      // Particles shown for it.
+      "particleCount": 120
+    },
+    // Morvath: soul shots that rain down on marked spots.
+    "soulBarrage": {
+      // Damage per hit (2 = one heart).
+      "damage": 6.0,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.75,
+      // How far the impacts spread around each player.
+      "scatterRadius": 5.0,
+      // Marked spots per player.
+      "markersPerPlayer": 4,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 2,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 32,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 10,
+      // Range of the skill, in blocks.
+      "radius": 15.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Morvath: a wave of fear that pushes players away.
+    "fearPulse": {
+      // Damage per hit (2 = one heart).
+      "damage": 4.0,
+      // How hard players are thrown back.
+      "knockbackStrength": 1.1,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 5,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 3,
+      // Seconds of wither.
+      "witherDurationSeconds": 3,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 10,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 16,
+      // Range of the skill, in blocks.
+      "radius": 9.0,
+      // Particles shown for it.
+      "particleCount": 150
+    },
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 720.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 13.0,
+    // Armor points, like player armor.
+    "armor": 14.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 58.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.27,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.82,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 45,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 96,
+    // XP dropped when it dies.
+    "xpReward": 460,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 6,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": [
+        "minecraft:soul_sand_valley"
+      ]
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "PURPLE",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "BLUE",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "PINK",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Morvath enters Phase 2: The Eclipse Deepens!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Morvath enters Phase 3: Soul Devouring Ascension!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "elyndra": {
+    // Elyndra: a rift that throws players into the air.
+    "voidRift": {
+      // Damage per hit (2 = one heart).
+      "damage": 9.0,
+      // Seconds of levitation.
+      "levitationDurationSeconds": 2,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 1,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 38,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 5,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 11,
+      // Range of the skill, in blocks.
+      "radius": 15.0,
+      // Particles shown for it.
+      "particleCount": 120
+    },
+    // Elyndra: a gravity well that hurts and lifts players.
+    "gravityCollapse": {
+      // Damage each time it ticks.
+      "damagePerTick": 3.5,
+      // Players this close to the impact are hit.
+      "hitRadius": 3.4,
+      // How long it lasts.
+      "durationSeconds": 5,
+      // Seconds between two ticks of damage.
+      "tickIntervalSeconds": 1,
+      // Seconds of levitation.
+      "levitationDurationSeconds": 1,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 1,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 42,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 7,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 13,
+      // Range of the skill, in blocks.
+      "radius": 16.0,
+      // Particles shown for it.
+      "particleCount": 135
+    },
+    // Elyndra: blades of starlight that fall on marked spots.
+    "starfallBlades": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.5,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.85,
+      // How far the impacts spread around each player.
+      "scatterRadius": 5.5,
+      // Marked spots per player.
+      "markersPerPlayer": 4,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 2,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 34,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 10,
+      // Range of the skill, in blocks.
+      "radius": 16.0,
+      // Particles shown for it.
+      "particleCount": 125
+    },
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 980.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 16.0,
+    // Armor points, like player armor.
+    "armor": 16.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 64.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.29,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.88,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 60,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 112,
+    // XP dropped when it dies.
+    "xpReward": 620,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 7,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": [
+        "minecraft:end_highlands",
+        "minecraft:end_midlands",
+        "minecraft:small_end_islands"
+      ]
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "PURPLE",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "PINK",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "WHITE",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Elyndra enters Phase 2: The Void Opens!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Elyndra enters Phase 3: Celestial Collapse!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "astrael": {
+    // Astrael: a heavy slam around him.
+    "primordialSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 12.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 3,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 34,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.5,
+      // Particles shown for it.
+      "particleCount": 170
+    },
+    // Astrael: elemental spikes around players.
+    "elementalBarrage": {
+      // Damage per hit (2 = one heart).
+      "damage": 8.5,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.9,
+      // How far the impacts spread around each player.
+      "scatterRadius": 5.5,
+      // Spikes per player.
+      "spikesPerPlayer": 4,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 3,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 36,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 11,
+      // Range of the skill, in blocks.
+      "radius": 16.0,
+      // Particles shown for it.
+      "particleCount": 135
+    },
+    // Astrael: a black hole that hurts everyone near it.
+    "voidSingularity": {
+      // Damage each time it ticks.
+      "damagePerTick": 4.0,
+      // Players this close to the impact are hit.
+      "hitRadius": 4.4,
+      // How long it lasts.
+      "durationSeconds": 5,
+      // Seconds between two ticks of damage.
+      "tickIntervalSeconds": 1,
+      // Seconds of levitation.
+      "levitationDurationSeconds": 1,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 1,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 44,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 14,
+      // Range of the skill, in blocks.
+      "radius": 18.0,
+      // Particles shown for it.
+      "particleCount": 160
+    },
+    // Astrael: a burning beam in front of him.
+    "worldbreakerBeam": {
+      // Damage per hit (2 = one heart).
+      "damage": 14.0,
+      // Width of the cone in front of the boss, in degrees.
+      "coneAngleDegrees": 42.0,
+      // Seconds players burn after a hit.
+      "fireSeconds": 5,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 42,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 10,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 16,
+      // Range of the skill, in blocks.
+      "radius": 18.0,
+      // Particles shown for it.
+      "particleCount": 180
+    },
+    // Astrael: chains that pull players to him.
+    "primordialChains": {
+      // Damage per hit (2 = one heart).
+      "damage": 9.0,
+      // How hard players are pulled.
+      "pullStrength": 2.2,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 4,
+      // Seconds of wither.
+      "witherDurationSeconds": 4,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 38,
+      // How dense the chain particles are.
+      "chainVisualDensity": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 7,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 13,
+      // Range of the skill, in blocks.
+      "radius": 20.0,
+      // Particles shown for it.
+      "particleCount": 170
+    },
+    // Astrael: a huge blast around him.
+    "cataclysmNova": {
+      // Damage per hit (2 = one heart).
+      "damage": 18.0,
+      // How hard players are thrown back.
+      "knockbackStrength": 2.25,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 5,
+      // Seconds of weakness.
+      "weaknessDurationSeconds": 5,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 60,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 14,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 24,
+      // Range of the skill, in blocks.
+      "radius": 18.0,
+      // Particles shown for it.
+      "particleCount": 240
+    },
+    // Astrael changes element every few seconds: his boss bar changes colour and elemental particles burst around him. Only for looks.
+    "enableElementalShift": true,
+    // Seconds between two of Astrael's element changes.
+    "elementalShiftIntervalSeconds": 20,
+    // Astrael: skills come faster in the last phase.
+    "finalEnrage": true,
+    // Astrael: skill cooldowns are multiplied by this in the last phase (0.65 = 35% faster).
+    "finalEnrageCooldownMultiplier": 0.65,
+    // Astrael blocks every Nth mace hit (0 = never).
+    "blockEveryNthMaceHit": 3,
+    // Keep blocking mace hits while debug mode is on.
+    "blockMaceInDebug": false,
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 1800.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 22.0,
+    // Armor points, like player armor.
+    "armor": 24.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 72.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.28,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.98,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 120,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 128,
+    // XP dropped when it dies.
+    "xpReward": 1200,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 10,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": [
+        "minecraft:plains",
+        "minecraft:forest",
+        "minecraft:dark_forest",
+        "minecraft:meadow",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga"
+      ]
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 10,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 55.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 10.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "WHITE",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "YELLOW",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "PURPLE",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Astrael enters Phase 2: Elemental Fusion!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Astrael enters Phase 3: Worldbreaker Ascension!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.75,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.55,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.15,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.35,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.35,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.75,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 180,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "shadowKing": {
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 1000.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 18.0,
+    // Armor points, like player armor.
+    "armor": 18.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 48.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.27,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.9,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 0,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 96,
+    // XP dropped when it dies.
+    "xpReward": 600,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 5,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": []
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "GREEN",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "YELLOW",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "RED",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Sylvaron enters Phase 2: The Grove Awakens!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Sylvaron enters Phase 3: Rootbound Enrage!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "dragonMother": {
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 1000.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 17.0,
+    // Armor points, like player armor.
+    "armor": 16.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 48.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.25,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.9,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 0,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 96,
+    // XP dropped when it dies.
+    "xpReward": 600,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 5,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": []
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "GREEN",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "YELLOW",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "RED",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Sylvaron enters Phase 2: The Grove Awakens!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Sylvaron enters Phase 3: Rootbound Enrage!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "stormGriffin": {
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 1000.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 16.0,
+    // Armor points, like player armor.
+    "armor": 14.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 48.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.28,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.9,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 0,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 96,
+    // XP dropped when it dies.
+    "xpReward": 600,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 5,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": []
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "GREEN",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "YELLOW",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "RED",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Sylvaron enters Phase 2: The Grove Awakens!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Sylvaron enters Phase 3: Rootbound Enrage!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  },
+  // Settings for this boss. Skill sections of other bosses in here are not used by it.
+  "shadowWeaver": {
+    // Health. Values over 1024 work: the boss then takes less damage per hit instead.
+    "maxHealth": 2000.0,
+    // Melee damage (2 = one heart).
+    "attackDamage": 20.0,
+    // Armor points, like player armor.
+    "armor": 20.0,
+    // How far the boss sees and follows players, in blocks.
+    "followRange": 48.0,
+    // Walking speed (a player walks at about 0.1).
+    "movementSpeed": 0.28,
+    // 0 = normal knockback, 1 = none at all.
+    "knockbackResistance": 0.9,
+    // Seconds before the shrine can summon this boss again (0 = right away).
+    "shrineCooldownSeconds": 0,
+    // Players within this many blocks when the boss dies get rewards.
+    "participantRewardRadius": 96,
+    // XP dropped when it dies.
+    "xpReward": 1200,
+    // How long the summoning ritual takes.
+    "ritualDurationSeconds": 5,
+    // Allow blindness and darkness effects from this boss.
+    "enableVisionEffects": true,
+    // Where the boss may be summoned.
+    "spawnRules": {
+      // Only allow summoning in the biomes listed below.
+      "enabled": true,
+      // Biome ids like "minecraft:plains" or tags like "#minecraft:is_forest".
+      "allowedBiomes": []
+    },
+    // The boss gets stronger when more players fight it.
+    "raidScaling": {
+      // Scale health and damage with the number of players.
+      "enabled": true,
+      // Tell players when the boss scales up.
+      "announceChanges": true,
+      // Never scale back down when players leave.
+      "onlyScaleUp": true,
+      // Players the base values are made for.
+      "basePlayerCount": 1,
+      // Scale for at most this many players.
+      "maxScaledPlayers": 8,
+      // A player stops counting after this long without hitting the boss.
+      "activeParticipantTimeoutSeconds": 45,
+      // Players within this many blocks can count.
+      "activeParticipantRadius": 96,
+      // Extra health for every player above the base count, in percent.
+      "healthPerExtraPlayerPercent": 45.0,
+      // Extra damage for every player above the base count, in percent.
+      "damagePerExtraPlayerPercent": 8.0
+    },
+    // The boss changes phase at certain health levels.
+    "phases": {
+      // Use phases.
+      "enabled": true,
+      // Announce a new phase in the chat.
+      "announcePhaseChanges": true,
+      // Phase 2 starts below this much health (percent).
+      "phase2HealthPercent": 70,
+      // Phase 3 starts below this much health (percent).
+      "phase3HealthPercent": 35,
+      // Boss bar colour: PINK, BLUE, RED, GREEN, YELLOW, PURPLE or WHITE.
+      "phase1BossBarColor": "GREEN",
+      // Boss bar colour in phase 2.
+      "phase2BossBarColor": "YELLOW",
+      // Boss bar colour in phase 3.
+      "phase3BossBarColor": "RED",
+      // Chat message at the start of phase 2.
+      "phase2Message": "Sylvaron enters Phase 2: The Grove Awakens!",
+      // Chat message at the start of phase 3.
+      "phase3Message": "Sylvaron enters Phase 3: Rootbound Enrage!",
+      // Skill cooldowns in phase 2 are multiplied by this (0.8 = 20% faster).
+      "phase2CooldownMultiplier": 0.8,
+      // Skill cooldowns in phase 3 are multiplied by this.
+      "phase3CooldownMultiplier": 0.6,
+      // Skill damage in phase 2 is multiplied by this.
+      "phase2DamageMultiplier": 1.1,
+      // Skill damage in phase 3 is multiplied by this.
+      "phase3DamageMultiplier": 1.25,
+      // More particles in phase 2.
+      "phase2ParticleMultiplier": 1.2,
+      // More particles in phase 3.
+      "phase3ParticleMultiplier": 1.5,
+      // Particles when the phase changes.
+      "phaseChangeParticles": 120,
+      // Players within this many blocks see the phase message.
+      "phaseBroadcastRadius": 96
+    },
+    // Sylvaron: a burst of spores that poisons and blinds.
+    "sporeBurst": {
+      // Seconds of poison.
+      "poisonDurationSeconds": 5,
+      // Poison level (0 = level I).
+      "poisonAmplifier": 0,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 3,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 4,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 40,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 4,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 9,
+      // Range of the skill, in blocks.
+      "radius": 8.0,
+      // Particles shown for it.
+      "particleCount": 100
+    },
+    // Sylvaron: a root that shoots at a player and holds them in place.
+    "rootPrison": {
+      // Seconds of slowness.
+      "slownessDurationSeconds": 4,
+      // Slowness level (0 = level I).
+      "slownessAmplifier": 3,
+      // Seconds of blindness.
+      "blindnessDurationSeconds": 2,
+      // Speed of the projectile.
+      "projectileSpeed": 0.45,
+      // Players this close to the impact are hit.
+      "hitRadius": 1.35,
+      // The projectile disappears after this long.
+      "maxTravelSeconds": 5,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 8,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 12,
+      // Range of the skill, in blocks.
+      "radius": 10.0,
+      // Particles shown for it.
+      "particleCount": 80
+    },
+    // Sylvaron: a slam that damages everyone around him.
+    "thornSlam": {
+      // Damage per hit (2 = one heart).
+      "damage": 7.0,
+      // Seconds of darkness.
+      "darknessDurationSeconds": 2,
+      // Warning time before the skill hits (20 ticks = 1 second).
+      "warningDelayTicks": 30,
+      // Turn this on or off.
+      "enabled": true,
+      // Seconds after the boss appears before it may use this skill.
+      "initialDelaySeconds": 6,
+      // Seconds before the skill can be used again.
+      "cooldownSeconds": 8,
+      // Range of the skill, in blocks.
+      "radius": 7.0,
+      // Particles shown for it.
+      "particleCount": 140
+    }
+  }
+}

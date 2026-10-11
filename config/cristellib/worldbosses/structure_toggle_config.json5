@@ -1,0 +1,25 @@
+{
+	"dragon_altars": {
+		"dragon_altar": true
+	},
+	"gnome_villages": {
+		"gnome_village": true
+	},
+	"nymph_villages": {
+		"nymph_village": true
+	},
+	"sentinel_arenas": {
+		"sentinel_arena_dark": true,
+		"sentinel_arena_heaven": true,
+		"sentinel_arena_normal": true
+	},
+	"shadow_altars": {
+		"shadow_altar": true
+	},
+	"sky_altars": {
+		"sky_altar": true
+	},
+	"weaver_altars": {
+		"weaver_altar": true
+	}
+}

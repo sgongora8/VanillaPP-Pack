@@ -1,0 +1,105 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 520,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:emerald",
+      // Name shown in the opening animation.
+      "label": "Emeralds",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 10,
+      // XP given together with this reward.
+      "xpBonus": 25,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:experience_bottle",
+      // Name shown in the opening animation.
+      "label": "Experience Bottles",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 8,
+      // XP given together with this reward.
+      "xpBonus": 30,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:moss_block",
+      // Name shown in the opening animation.
+      "label": "Moss Blocks",
+      // Least amount.
+      "minCount": 12,
+      // Most amount.
+      "maxCount": 24,
+      // XP given together with this reward.
+      "xpBonus": 20,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:iron_ingot",
+      // Name shown in the opening animation.
+      "label": "Iron Ingots",
+      // Least amount.
+      "minCount": 8,
+      // Most amount.
+      "maxCount": 16,
+      // XP given together with this reward.
+      "xpBonus": 20,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:oak_log",
+      // Name shown in the opening animation.
+      "label": "Ancient Grove Logs",
+      // Least amount.
+      "minCount": 16,
+      // Most amount.
+      "maxCount": 32,
+      // XP given together with this reward.
+      "xpBonus": 20,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:glow_berries",
+      // Name shown in the opening animation.
+      "label": "Glow Berries",
+      // Least amount.
+      "minCount": 8,
+      // Most amount.
+      "maxCount": 16,
+      // XP given together with this reward.
+      "xpBonus": 25,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 60,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

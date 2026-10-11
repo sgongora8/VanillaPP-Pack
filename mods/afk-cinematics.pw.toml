@@ -1,0 +1,13 @@
+name = "AFK Cinematics"
+filename = "afk-cinematics-1.0.6+26.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "da091091d33f09b0dafac3e225aaee85df53df1b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8979150
+project-id = 1494449

@@ -1,0 +1,13 @@
+name = "End Villager Outpost"
+filename = "end_villager_outpost-1.0.0 Fabric 26.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3051f0ceb174689afae863c6c677ed1fdb3d315b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8912256
+project-id = 1341317

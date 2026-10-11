@@ -1,0 +1,73 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 55,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:netherite_ingot",
+      // Name shown in the opening animation.
+      "label": "Netherite Ingots",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 2,
+      // XP given together with this reward.
+      "xpBonus": 650,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:enchanted_golden_apple",
+      // Name shown in the opening animation.
+      "label": "Enchanted Golden Apples",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 3,
+      // XP given together with this reward.
+      "xpBonus": 580,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 90,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:sky_sigil",
+      // Name shown in the opening animation.
+      "label": "Sky Sigil",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 700,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 70,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:heavy_core",
+      // Name shown in the opening animation.
+      "label": "Heavy Core",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 750,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 40,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

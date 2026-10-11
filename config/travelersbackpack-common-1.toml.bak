@@ -1,0 +1,6 @@
+# Prevent early backpacks from appearing through loot or villager trades.
+# The datapack recipe intentionally introduces the backpack after Nether travel.
+
+[common]
+enableLoot = false
+enableVillagerTrade = false

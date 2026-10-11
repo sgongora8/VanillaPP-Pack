@@ -1,0 +1,13 @@
+name = "Cut Through"
+filename = "cutthrough-v26.3.0-mc26.3.x+fabric.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2e719fb824fd09711218080f2ad432f4a22275ef"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8953992
+project-id = 969423

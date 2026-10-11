@@ -1,0 +1,121 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 10,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:nether_star",
+      // Name shown in the opening animation.
+      "label": "Nether Stars",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 2,
+      // XP given together with this reward.
+      "xpBonus": 950,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:elytra",
+      // Name shown in the opening animation.
+      "label": "Elytra",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 1000,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:primordial_core",
+      // Name shown in the opening animation.
+      "label": "Primordial Cores",
+      // Least amount.
+      "minCount": 2,
+      // Most amount.
+      "maxCount": 3,
+      // XP given together with this reward.
+      "xpBonus": 1100,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:astrael_trophy",
+      // Name shown in the opening animation.
+      "label": "Astrael Trophy",
+      // Least amount.
+      "minCount": 1,
+      // Most amount.
+      "maxCount": 1,
+      // XP given together with this reward.
+      "xpBonus": 1500,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 25,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:astrael_shard",
+      // Name shown in the opening animation.
+      "label": "Astrael Shard",
+      // Least amount.
+      "minCount": 8,
+      // Most amount.
+      "maxCount": 12,
+      // XP given together with this reward.
+      "xpBonus": 1000,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 140,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:primordial_core",
+      // Name shown in the opening animation.
+      "label": "Primordial Core Bundle",
+      // Least amount.
+      "minCount": 3,
+      // Most amount.
+      "maxCount": 5,
+      // XP given together with this reward.
+      "xpBonus": 1400,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 120,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:astrael_shard",
+      // Name shown in the opening animation.
+      "label": "Astrael Shard Cache",
+      // Least amount.
+      "minCount": 10,
+      // Most amount.
+      "maxCount": 16,
+      // XP given together with this reward.
+      "xpBonus": 1500,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 145,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

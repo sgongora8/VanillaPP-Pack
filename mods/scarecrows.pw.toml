@@ -1,0 +1,13 @@
+name = "Scarecrows"
+filename = "scarecrows-fabric-26.3-1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4354c53b8920ba9ee9011cc4e27ff3aafba9622f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8921629
+project-id = 304644

@@ -1,0 +1,73 @@
+{
+  // Chance of this rarity compared to the others. Higher = more often.
+  "categoryWeight": 285,
+  // Turn this on or off.
+  "enabled": true,
+  // Possible rewards of this rarity.
+  "rewards": [
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "minecraft:diamond",
+      // Name shown in the opening animation.
+      "label": "Diamonds",
+      // Least amount.
+      "minCount": 6,
+      // Most amount.
+      "maxCount": 12,
+      // XP given together with this reward.
+      "xpBonus": 180,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 100,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:terranite",
+      // Name shown in the opening animation.
+      "label": "Terranite",
+      // Least amount.
+      "minCount": 3,
+      // Most amount.
+      "maxCount": 6,
+      // XP given together with this reward.
+      "xpBonus": 160,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 90,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:caelestine",
+      // Name shown in the opening animation.
+      "label": "Caelestine",
+      // Least amount.
+      "minCount": 3,
+      // Most amount.
+      "maxCount": 6,
+      // XP given together with this reward.
+      "xpBonus": 160,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 90,
+      // Can be won.
+      "enabled": true
+    },
+    {
+      // Item id, e.g. "minecraft:diamond".
+      "item": "worldbosses:worldbreaker_dust",
+      // Name shown in the opening animation.
+      "label": "Worldbreaker Dust",
+      // Least amount.
+      "minCount": 4,
+      // Most amount.
+      "maxCount": 8,
+      // XP given together with this reward.
+      "xpBonus": 200,
+      // Chance compared to the other rewards in this list. Higher = more often.
+      "weight": 80,
+      // Can be won.
+      "enabled": true
+    }
+  ]
+}

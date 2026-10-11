@@ -1,0 +1,13 @@
+name = "DnT Ocean Monument Overhaul"
+filename = "DnT-ocean-monument-overhaul-2.3 [Fabric].jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "07680af3f03201f35bc253f9694a64ee403ce66f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8903490
+project-id = 1053227

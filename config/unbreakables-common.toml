@@ -1,0 +1,6 @@
+
+# Which block placements should be tracked. Required for `is_generated` rule.
+placedBlockTracking = "in_structure"
+
+# List of custom rules in Shogi format. Will be applied in order. For example, use('waystones:generated_waystones').
+rules = [ "use('waystones:generated_waystones')" ]
